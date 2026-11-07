@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>X-PixelFood</title>
+  <style>
+  :root {
+    font-family: system-ui,sans-serif;
+    color: #292a22;
+    background: #faf8f0;
+    color-scheme: light;
+    --panel: #fffef8;
+    --line: #d8d7cb;
+    --accent: #556b36;
+    --mute: #67695f;
+  }
+  :root[data-theme=dark] {
+    color: #edece1;
+    background: #171a15;
+    color-scheme: dark;
+    --panel: #22271f;
+    --line: #444b3b;
+    --accent: #b8d487;
+    --mute: #b7bdac;
+  }
+  @media (prefers-color-scheme:dark) {
+    :root[data-theme=system] {
+      color: #edece1;
+      background: #171a15;
+      color-scheme: dark;
+      --panel: #22271f;
+      --line: #444b3b;
+      --accent: #b8d487;
+      --mute: #b7bdac;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 18px;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: -.7px;
+  }
+  small {
+    color: var(--mute);
+  }
+  .settings,
+  .filters {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  label {
+    font-size: 12px;
+  }
+  select,
+  input,
+  button,
+  a.action {
+    font: inherit;
+    color: inherit;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    padding: 8px;
+  }
+  input {
+    min-width: 0;
+    flex: 1;
+  }
+  button,
+  a.action {
+    cursor: pointer;
+  }
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .settings select {
+    max-width: 145px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    flex: 1;
+    gap: 10px;
+  }
+  .preview {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 18px;
+  }
+  .preview img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    image-rendering: pixelated;
+  }
+  .detail {
+    min-width: 0;
+  }
+  h2 {
+    margin: 0 0 4px;
+    font-size: 20px;
+  }
+  .meta {
+    font: 12px ui-monospace,monospace;
+    color: var(--mute);
+    margin: 6px 0 14px;
+  }
+  .action {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px!important;
+  }
+  .board {
+    min-height: 0;
+    flex: 1;
+    display: grid;
+    gap: 7px;
+    grid-template-columns: repeat(var(--cols,6),minmax(0,1fr));
+    grid-template-rows: repeat(var(--rows,4),minmax(0,1fr));
+  }
+  .food {
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 2px;
+  }
+  .food[aria-pressed=true] {
+    border: 2px solid var(--accent);
+    background: var(--panel);
+  }
+  .food img {
+    width: 100%;
+    height: 0;
+    min-height: 0;
+    flex: 1;
+    object-fit: contain;
+    image-rendering: pixelated;
+  }
+  .food span {
+    font-size: 12px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .status {
+    font-size: 12px;
+    color: var(--mute);
+    margin: 0;
+  }
+
+
+  footer {
+    font-size: 11px;
+    color: var(--mute);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  footer a {
+    color: inherit;
+  }
+  .empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    color: var(--mute);
+  }
+  [hidden] {
+    display: none!important;
+  }
+  @media (max-width:600px) {
+    body {
+      padding: 10px;
+      gap: 8px;
+    }
+    header {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .settings {
+      width: 100%;
+    }
+    .settings label {
+      flex: 1;
+    }
+    .settings select {
+      width: 100%;
+      max-width: none;
+      padding: 5px;
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    .preview {
+      padding: 5px 10px;
+      gap: 10px;
+    }
+    .preview img {
+      width: 88px;
+      height: 88px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    .meta {
+      font-size: 10px;
+      margin: 3px 0 7px;
+    }
+    .action {
+      padding: 5px!important;
+    }
+    .filters {
+      gap: 5px;
+    }
+    .filters select {
+      max-width: 125px;
+    }
+    .food span {
+      font-size: 10px;
+    }
+    .board {
+      gap: 4px;
+    }
+    footer {
+      font-size: 10px;
+    }
+  }
+  @media (max-height:550px) {
+    .preview img {
+      width: 64px;
+      height: 64px;
+    }
+    .preview {
+      padding: 4px 10px;
+    }
+    .meta {
+      margin: 3px 0;
+    }
+    body {
+      gap: 6px;
+      padding: 8px;
+    }
+    .food span {
+      display: none;
+    }
+  }
+  </style>
+  <body>
+    <header>
+      <div>
+        <h1>X-PixelFood <small>0.1.0</small></h1>
+      </div>
+      <div
+        class="settings"><label><span id="languageLabel">Language</span> <select id="language"><option value="en">English</option><option value="zh-TW">繁體中文</option><option value="zh-CN">简体中文</option></select></label><label><span id="themeLabel">Theme</span> <select id="theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label></div>
+    </header>
+    <main>
+      <div
+        class="filters"><input id="search" type="search" aria-label="Search food" placeholder="Search food"><select id="category" aria-label="Category"></select></div>
+      <section class="preview"
+        aria-labelledby="foodName"><img id="preview" alt=""><div class="detail"><h2 id="foodName"></h2><div class="meta" id="meta"></div><a class="action" id="download">Download WebP</a></div></section>
+      <p class="status" id="status" role="status"></p>
+      <div class="board" id="board"></div>
+    </main>
+    <footer><span id="license"></span><a href="https://github.com/cosmintrica/culinary-assets" rel="noreferrer" target="_blank" id="thanks">Culinary Assets · appreciation</a></footer>
+    <script>
+    /*__FOODS__*/
+    /*__SCRIPT__*/
+    </script>
+  </body>
+</html>

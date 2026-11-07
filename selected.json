@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "burger",
+      "importLicense": "pending",
+      "png": "assets/png/burger.png",
+      "pngSha256": "ed1dea88915c9a1cec245a7799069faf1f597db4cb3024fc65d584be426c540e"
+    },
+    {
+      "id": "wrap",
+      "importLicense": "pending",
+      "png": "assets/png/wrap.png",
+      "pngSha256": "180ace90cfb33988b678ce63542cc822f1c7c4df29c24b64fb90d48d8d8bd62c"
+    },
+    {
+      "id": "onion",
+      "importLicense": "pending",
+      "png": "assets/png/onion.png",
+      "pngSha256": "12b5422311a32ee0dfab1e22c6edc722c52cd7b303fc3a12f1206b2089548e53"
+    },
+    {
+      "id": "dumpling",
+      "importLicense": "pending",
+      "png": "assets/png/dumpling.png",
+      "pngSha256": "eb3d65e8e5a3c7c7a6671284591d7fd9388008a70a9a1f2b610e9dee245db328"
+    },
+    {
+      "id": "drumstick",
+      "importLicense": "pending",
+      "png": "assets/png/drumstick.png",
+      "pngSha256": "94452c78d4fc99e330c789edd6e2c3a194c912a456419dc1f6fa32d8e69b92a6"
+    },
+    {
+      "id": "rice",
+      "importLicense": "pending",
+      "png": "assets/png/rice.png",
+      "pngSha256": "99ec4762b81a04a4162d71f1d126ec108cf49b321a892b16d322e8aeea47fdd3"
+    },
+    {
+      "id": "cabbage",
+      "importLicense": "pending",
+      "png": "assets/png/cabbage.png",
+      "pngSha256": "5f28152911c5afce5909bbc816de0f8f794dea3d25169773020d6f38774ee70e"
+    },
+    {
+      "id": "kimchi",
+      "importLicense": "pending",
+      "png": "assets/png/kimchi.png",
+      "pngSha256": "63e1b69637ec8e0f5329b6945d0e1daa3821a158cb65414826a2b2530c041579"
+    },
+    {
+      "id": "sausage",
+      "importLicense": "pending",
+      "png": "assets/png/sausage.png",
+      "pngSha256": "c7e41dfd5473be82c85d8887bbcaa1fe6d3f46a8b04939178a863a564017a239"
+    },
+    {
+      "id": "egg",
+      "importLicense": "pending",
+      "png": "assets/png/egg.png",
+      "pngSha256": "d4d439a4ee4d2ad6b66a9e1164bccf0ec445d2f541385112c3d8b23bfdae35dc"
+    },
+    {
+      "id": "nuggets",
+      "importLicense": "pending",
+      "png": "assets/png/nuggets.png",
+      "pngSha256": "d9b6ae135ed9e1b018c8ac561c3717434c9cf19ebb28a4aea5e3d42d18017c1f"
+    },
+    {
+      "id": "sushi",
+      "importLicense": "pending",
+      "png": "assets/png/sushi.png",
+      "pngSha256": "637480bd18c646b0d6d6dcb99454b3a0f34b1730b9d8aff543862b42fef2d585"
+    },
+    {
+      "id": "flatbread",
+      "importLicense": "pending",
+      "png": "assets/png/flatbread.png",
+      "pngSha256": "c41c09d1b79452cacb8c38ffa2c5de98ae49cf9d27888d8f3ee10f25c5c07883"
+    },
+    {
+      "id": "porridge",
+      "importLicense": "pending",
+      "png": "assets/png/porridge.png",
+      "pngSha256": "3c12f88d02349af56be52af4ba34e311920957731a7f2322caf0e908079001d1"
+    },
+    {
+      "id": "ramen",
+      "importLicense": "pending",
+      "png": "assets/png/ramen.png",
+      "pngSha256": "0eafa26e5538db99d7b8a7aaf54514cd775c435a7d089fc264bff4ace3d9d1ce"
+    },
+    {
+      "id": "chickenbreast",
+      "importLicense": "pending",
+      "png": "assets/png/chickenbreast.png",
+      "pngSha256": "84366e2ea734722cf46cde0b74a9bdc01a08c574d15a01979f380a635d708390"
+    },
+    {
+      "id": "lettuce",
+      "importLicense": "pending",
+      "png": "assets/png/lettuce.png",
+      "pngSha256": "ae810e5bf22dbfff849eed3338efcdcf2adc969b2d9831ca7b8f17cf079defaa"
+    },
+    {
+      "id": "cookies",
+      "importLicense": "pending",
+      "png": "assets/png/cookies.png",
+      "pngSha256": "145ce2538b04b10d165c1a5c7154836126d6368a9fa62e92ee6b295535d92a14"
+    },
+    {
+      "id": "shaobing",
+      "importLicense": "pending",
+      "png": "assets/png/shaobing.png",
+      "pngSha256": "3a06f25ec02178a5620eb8c5430a8d53cc75a0c47448bdb4aa8eb96db0132178"
+    },
+    {
+      "id": "eighttreasure",
+      "importLicense": "pending",
+      "png": "assets/png/eighttreasure.png",
+      "pngSha256": "cfe7723e9ba80d21434aab39039ce3336ed9763a1c6c4d50d53cd3844cf00346"
+    },
+    {
+      "id": "eighttreasurecup",
+      "importLicense": "pending",
+      "png": "assets/png/eighttreasurecup.png",
+      "pngSha256": "624ed1cf6fde47a964c28bf9224888bdb8f3c750da5d177df03a43579a15269a"
+    },
+    {
+      "id": "coconutoat",
+      "importLicense": "pending",
+      "png": "assets/png/coconutoat.png",
+      "pngSha256": "964e9297e71be2f7ce78ca8d3d6c435f2337ebdbf6c211e8f54766b5fcde1943"
+    },
+    {
+      "id": "salad",
+      "importLicense": "pending",
+      "png": "assets/png/salad.png",
+      "pngSha256": "0a99ac354f7db0aee92d4374d1b414ea6341cdc3f9c588c1fd6ed94c6393996e"
+    },
+    {
+      "id": "coldnoodles",
+      "importLicense": "pending",
+      "png": "assets/png/coldnoodles.png",
+      "pngSha256": "76b675b135d630a2d7ca31fffc348426815a0e1ea6bf34f95aa95a03189d52fc"
+    },
+    {
+      "id": "chickenburger",
+      "importLicense": "pending",
+      "png": "assets/png/chickenburger.png",
+      "pngSha256": "28a99a2bf52cd095391a3126f0f136ac9c96e710c367a3588bc28b4f299d4128"
+    },
+    {
+      "id": "chickenwrap",
+      "importLicense": "pending",
+      "png": "assets/png/chickenwrap.png",
+      "pngSha256": "864c6fa71bfe341e35d7e12a3a62e33f48f733252fb5abb69ef1b7f8139b846f"
+    },
+    {
+      "id": "cola",
+      "importLicense": "pending",
+      "png": "assets/png/cola.png",
+      "pngSha256": "a427d677c449496019d4ee4fda5dcde405346331314efe9dcac1628e7fc0af6d"
+    },
+    {
+      "id": "cookednoodles",
+      "importLicense": "pending",
+      "png": "assets/png/cookednoodles.png",
+      "pngSha256": "52f866215e28616a83040f520087b5e5fd392a81218973097e168d79ab740d0d"
+    },
+    {
+      "id": "drynoodles",
+      "importLicense": "pending",
+      "png": "assets/png/drynoodles.png",
+      "pngSha256": "251f7d0ed9c53a7bda725f5f40c3563f82aa41b3f75160a32ef99d9122fb748b"
+    },
+    {
+      "id": "glutenroll",
+      "importLicense": "pending",
+      "png": "assets/png/glutenroll.png",
+      "pngSha256": "f29d9b1145840d0a260648d21bada2b780ea1859e3384099fc29748cf1b3a16a"
+    },
+    {
+      "id": "chaobingsi",
+      "importLicense": "pending",
+      "png": "assets/png/chaobingsi.png",
+      "pngSha256": "4fe7da867e3a552d5ef54750b4d77ecff4673c2e05a3762db1c97a526740812e"
+    },
+    {
+      "id": "panfriedbun",
+      "importLicense": "pending",
+      "png": "assets/png/panfriedbun.png",
+      "pngSha256": "2f58ddc6a4184fa8bb159d2fcab7a01db31d9c52557f1d22e3f5f8771ef8079c"
+    },
+    {
+      "id": "wholeegg",
+      "importLicense": "pending",
+      "png": "assets/png/wholeegg.png",
+      "pngSha256": "6264d2970e49d41c9e4b9b20eae3c15d752d4223b845e71ffed58576b6e1d2f9"
+    },
+    {
+      "id": "redbeanguokui",
+      "importLicense": "pending",
+      "png": "assets/png/redbeanguokui.png",
+      "pngSha256": "5711b27fe647d9acb6a66cc082928cb1819a8f9e30800c444d4aeb2965cded52"
+    },
+    {
+      "id": "porkguokui",
+      "importLicense": "pending",
+      "png": "assets/png/porkguokui.png",
+      "pngSha256": "7e3b2dff4aeea46a32b13401f4da1f926f21afe6657dee0acb283aa60e22efe0"
+    },
+    {
+      "id": "glutenskewer",
+      "importLicense": "pending",
+      "png": "assets/png/glutenskewer.png",
+      "pngSha256": "e8563fd1ae0148ca9bbe7039ff88c45e2fdb32b40908cd877960d6b60e5012d3"
+    },
+    {
+      "id": "fishtofu",
+      "importLicense": "pending",
+      "png": "assets/png/fishtofu.png",
+      "pngSha256": "c961504be858e3b4d98c199e50382d850526a9538c731576c9bd00df41474a7a"
+    },
+    {
+      "id": "laomo",
+      "importLicense": "pending",
+      "png": "assets/png/laomo.png",
+      "pngSha256": "39ac9aa85caf5d6a20a98ab35b5c8222f2058089619c4523d4f261fbe612af21"
+    },
+    {
+      "id": "jianbing",
+      "importLicense": "pending",
+      "png": "assets/png/jianbing.png",
+      "pngSha256": "e1d7ba1d1e87e1b1b52d04d0fb395a91032cd5941ce5bd176c4911991065a8ec"
+    },
+    {
+      "id": "eggtart",
+      "importLicense": "pending",
+      "png": "assets/png/eggtart.png",
+      "pngSha256": "1879316be311c8fd86735d02bd6de0e6322bfebcec68779729df6e1c9262e029"
+    },
+    {
+      "id": "redbeanpie",
+      "importLicense": "pending",
+      "png": "assets/png/redbeanpie.png",
+      "pngSha256": "5ae5a0a0bc7fedffdac8d87aee11dbcfbad5404c127ac9e59db258a77db5ab2b"
+    },
+    {
+      "id": "sourplumdrink",
+      "importLicense": "pending",
+      "png": "assets/png/sourplumdrink.png",
+      "pngSha256": "62329cf1f289408d2bf805561b4e0a2c983cec019e078471919a597caa3de446"
+    },
+    {
+      "id": "chickenthighroll",
+      "importLicense": "pending",
+      "png": "assets/png/chickenthighroll.png",
+      "pngSha256": "a25d6b7bfe1a69cd69fb77e1b2dd490513b54580474c1de45343f7a70051dbbf"
+    },
+    {
+      "id": "mushroomchickennoodles",
+      "importLicense": "pending",
+      "png": "assets/png/mushroomchickennoodles.png",
+      "pngSha256": "579f3accfb5c693df2a429549f06438df2264d7b3cb479cabaf856dbfd1fd0ed"
+    },
+    {
+      "id": "pickledpepperrings",
+      "importLicense": "pending",
+      "png": "assets/png/pickledpepperrings.png",
+      "pngSha256": "4b0b3d875a3a2b7127a74079f42e030c1c1f23c251d2c50247adf5e493f8b563"
+    },
+    {
+      "id": "sweetpickledradish",
+      "importLicense": "pending",
+      "png": "assets/png/sweetpickledradish.png",
+      "pngSha256": "f5afa234df25db54adebafa6bfbb727cda604846c08f921b4770f4b531cf233b"
+    },
+    {
+      "id": "fruityogurt",
+      "importLicense": "pending",
+      "png": "assets/png/fruityogurt.png",
+      "pngSha256": "6a5ad78853660de058c9b3a97a176fdc865eec006cc9b538a1c6004e39df393d"
+    },
+    {
+      "id": "cutwatermelon",
+      "importLicense": "pending",
+      "png": "assets/png/cutwatermelon.png",
+      "pngSha256": "7e5dea819c46466bbc84940b2fb0c2dcf391271e1bf9628262c02628727d4f2f"
+    },
+    {
+      "id": "searedsushiplatter",
+      "importLicense": "pending",
+      "png": "assets/png/searedsushiplatter.png",
+      "pngSha256": "dba25ca5ce16201aeda979dde95c8c55f8c6e83170027c1645662ab46509c2e9"
+    },
+    {
+      "id": "tomatochickenrice",
+      "importLicense": "pending",
+      "png": "assets/png/tomatochickenrice.png",
+      "pngSha256": "36822d37c0b94569607e24e361c86ad0bf78cf58ca9444c3b2ff85c29d8b721c"
+    },
+    {
+      "id": "doublechickenburger",
+      "importLicense": "pending",
+      "png": "assets/png/doublechickenburger.png",
+      "pngSha256": "ed987d9f5fa525e85cde78310f82fb9c2ca02f80923c5e1a68b5a0079fc0fb0b"
+    },
+    {
+      "id": "braisedegg",
+      "importLicense": "pending",
+      "png": "assets/png/braisedegg.png",
+      "pngSha256": "12fdcc6761748a6179d5beb6d1c45c0591296badfedbe2fb28aff642280c9f91"
+    },
+    {
+      "id": "jiangxiangbing",
+      "importLicense": "pending",
+      "png": "assets/png/jiangxiangbing.png",
+      "pngSha256": "9e50217d4d5eba33dc6c963a623ab54b884b306bec53669cb62cba5db6e7d718"
+    },
+    {
+      "id": "chestnutchickenrice",
+      "importLicense": "pending",
+      "png": "assets/png/chestnutchickenrice.png",
+      "pngSha256": "26afd22d6e3c238200c2ff0167d076121c90bf97c9836533ac45857835858913"
+    }
+  ]
+}

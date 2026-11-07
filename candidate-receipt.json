@@ -1,0 +1,876 @@
+{
+  "schemaVersion": 1,
+  "scope": "selected-artwork-and-tools-local-candidate",
+  "seal": "514aa5603abad213a9c18fc7d4a1258bf3584829685b13ea6243088f20be2dc0",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "8af46763cf99348b24ea96adbb848f8dbd5e7459f6b52a868a581b0ee0ce9a28",
+      "bytes": 127,
+      "executable": false
+    },
+    {
+      "path": "ARTWORK-LICENSE.md",
+      "sha256": "94b62247b89476a99ee97b91d139cdc6b7a3d87cc5fe8f6ade4d41ac64e6ed2e",
+      "bytes": 1065,
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9732d1acfeaea7916d0cc993f9522f9a0774e1104d95fc48f59ea893de828f59",
+      "bytes": 1081,
+      "executable": false
+    },
+    {
+      "path": "LICENSE-ARTWORK.md",
+      "sha256": "3442f753c7d22814bd0e62ca90d79b5f35503513ead5aa55ede29507964e9a86",
+      "bytes": 1801,
+      "executable": false
+    },
+    {
+      "path": "LICENSE-SCOPE.json",
+      "sha256": "fd78e49460620c28e2191bb0901a860942310fedd01c3d1d6c2c16611db28ef8",
+      "bytes": 34950,
+      "executable": false
+    },
+    {
+      "path": "README.es.md",
+      "sha256": "65d7aa13ea64e56d18186a97d7d31266d45b0a6abbe59a9d237bc4ef698d73a6",
+      "bytes": 2676,
+      "executable": false
+    },
+    {
+      "path": "README.ja.md",
+      "sha256": "953d8cfcea3e49e13341a662053b46ece3b1190d8c98b77fd8d069d1e60dd336",
+      "bytes": 3005,
+      "executable": false
+    },
+    {
+      "path": "README.ko.md",
+      "sha256": "6ff1cfce56190dd7ac849f7c18f6270450c93ff8f5a0c2d03a2584ab52480463",
+      "bytes": 2926,
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "cf3b0620daabdcc45336ebc621496ccf90d122f5832273eb2aabcf3a696aee7e",
+      "bytes": 2735,
+      "executable": false
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha256": "1e9a080ed2b41549419765c1026a9b8c54d6f12e7cdedb683dbd997673221600",
+      "bytes": 2462,
+      "executable": false
+    },
+    {
+      "path": "README.zh-TW.md",
+      "sha256": "c2b62dfa39dff5480e9784c334580d633b8d3e38d3d3324e42cdc249ff870770",
+      "bytes": 2462,
+      "executable": false
+    },
+    {
+      "path": "assets/png/braisedegg.png",
+      "sha256": "12fdcc6761748a6179d5beb6d1c45c0591296badfedbe2fb28aff642280c9f91",
+      "bytes": 135849,
+      "executable": false
+    },
+    {
+      "path": "assets/png/burger.png",
+      "sha256": "ed1dea88915c9a1cec245a7799069faf1f597db4cb3024fc65d584be426c540e",
+      "bytes": 581993,
+      "executable": false
+    },
+    {
+      "path": "assets/png/cabbage.png",
+      "sha256": "5f28152911c5afce5909bbc816de0f8f794dea3d25169773020d6f38774ee70e",
+      "bytes": 394062,
+      "executable": false
+    },
+    {
+      "path": "assets/png/chaobingsi.png",
+      "sha256": "4fe7da867e3a552d5ef54750b4d77ecff4673c2e05a3762db1c97a526740812e",
+      "bytes": 500054,
+      "executable": false
+    },
+    {
+      "path": "assets/png/chestnutchickenrice.png",
+      "sha256": "26afd22d6e3c238200c2ff0167d076121c90bf97c9836533ac45857835858913",
+      "bytes": 506864,
+      "executable": false
+    },
+    {
+      "path": "assets/png/chickenbreast.png",
+      "sha256": "84366e2ea734722cf46cde0b74a9bdc01a08c574d15a01979f380a635d708390",
+      "bytes": 436735,
+      "executable": false
+    },
+    {
+      "path": "assets/png/chickenburger.png",
+      "sha256": "28a99a2bf52cd095391a3126f0f136ac9c96e710c367a3588bc28b4f299d4128",
+      "bytes": 436823,
+      "executable": false
+    },
+    {
+      "path": "assets/png/chickenthighroll.png",
+      "sha256": "a25d6b7bfe1a69cd69fb77e1b2dd490513b54580474c1de45343f7a70051dbbf",
+      "bytes": 358865,
+      "executable": false
+    },
+    {
+      "path": "assets/png/chickenwrap.png",
+      "sha256": "864c6fa71bfe341e35d7e12a3a62e33f48f733252fb5abb69ef1b7f8139b846f",
+      "bytes": 346702,
+      "executable": false
+    },
+    {
+      "path": "assets/png/coconutoat.png",
+      "sha256": "964e9297e71be2f7ce78ca8d3d6c435f2337ebdbf6c211e8f54766b5fcde1943",
+      "bytes": 260708,
+      "executable": false
+    },
+    {
+      "path": "assets/png/cola.png",
+      "sha256": "a427d677c449496019d4ee4fda5dcde405346331314efe9dcac1628e7fc0af6d",
+      "bytes": 206386,
+      "executable": false
+    },
+    {
+      "path": "assets/png/coldnoodles.png",
+      "sha256": "76b675b135d630a2d7ca31fffc348426815a0e1ea6bf34f95aa95a03189d52fc",
+      "bytes": 383942,
+      "executable": false
+    },
+    {
+      "path": "assets/png/cookednoodles.png",
+      "sha256": "52f866215e28616a83040f520087b5e5fd392a81218973097e168d79ab740d0d",
+      "bytes": 302468,
+      "executable": false
+    },
+    {
+      "path": "assets/png/cookies.png",
+      "sha256": "145ce2538b04b10d165c1a5c7154836126d6368a9fa62e92ee6b295535d92a14",
+      "bytes": 393373,
+      "executable": false
+    },
+    {
+      "path": "assets/png/cutwatermelon.png",
+      "sha256": "7e5dea819c46466bbc84940b2fb0c2dcf391271e1bf9628262c02628727d4f2f",
+      "bytes": 366563,
+      "executable": false
+    },
+    {
+      "path": "assets/png/doublechickenburger.png",
+      "sha256": "ed987d9f5fa525e85cde78310f82fb9c2ca02f80923c5e1a68b5a0079fc0fb0b",
+      "bytes": 324651,
+      "executable": false
+    },
+    {
+      "path": "assets/png/drumstick.png",
+      "sha256": "94452c78d4fc99e330c789edd6e2c3a194c912a456419dc1f6fa32d8e69b92a6",
+      "bytes": 326039,
+      "executable": false
+    },
+    {
+      "path": "assets/png/drynoodles.png",
+      "sha256": "251f7d0ed9c53a7bda725f5f40c3563f82aa41b3f75160a32ef99d9122fb748b",
+      "bytes": 426342,
+      "executable": false
+    },
+    {
+      "path": "assets/png/dumpling.png",
+      "sha256": "eb3d65e8e5a3c7c7a6671284591d7fd9388008a70a9a1f2b610e9dee245db328",
+      "bytes": 314881,
+      "executable": false
+    },
+    {
+      "path": "assets/png/egg.png",
+      "sha256": "d4d439a4ee4d2ad6b66a9e1164bccf0ec445d2f541385112c3d8b23bfdae35dc",
+      "bytes": 325531,
+      "executable": false
+    },
+    {
+      "path": "assets/png/eggtart.png",
+      "sha256": "1879316be311c8fd86735d02bd6de0e6322bfebcec68779729df6e1c9262e029",
+      "bytes": 488908,
+      "executable": false
+    },
+    {
+      "path": "assets/png/eighttreasure.png",
+      "sha256": "cfe7723e9ba80d21434aab39039ce3336ed9763a1c6c4d50d53cd3844cf00346",
+      "bytes": 434166,
+      "executable": false
+    },
+    {
+      "path": "assets/png/eighttreasurecup.png",
+      "sha256": "624ed1cf6fde47a964c28bf9224888bdb8f3c750da5d177df03a43579a15269a",
+      "bytes": 284269,
+      "executable": false
+    },
+    {
+      "path": "assets/png/fishtofu.png",
+      "sha256": "c961504be858e3b4d98c199e50382d850526a9538c731576c9bd00df41474a7a",
+      "bytes": 271084,
+      "executable": false
+    },
+    {
+      "path": "assets/png/flatbread.png",
+      "sha256": "c41c09d1b79452cacb8c38ffa2c5de98ae49cf9d27888d8f3ee10f25c5c07883",
+      "bytes": 497393,
+      "executable": false
+    },
+    {
+      "path": "assets/png/fruityogurt.png",
+      "sha256": "6a5ad78853660de058c9b3a97a176fdc865eec006cc9b538a1c6004e39df393d",
+      "bytes": 391943,
+      "executable": false
+    },
+    {
+      "path": "assets/png/glutenroll.png",
+      "sha256": "f29d9b1145840d0a260648d21bada2b780ea1859e3384099fc29748cf1b3a16a",
+      "bytes": 344370,
+      "executable": false
+    },
+    {
+      "path": "assets/png/glutenskewer.png",
+      "sha256": "e8563fd1ae0148ca9bbe7039ff88c45e2fdb32b40908cd877960d6b60e5012d3",
+      "bytes": 220429,
+      "executable": false
+    },
+    {
+      "path": "assets/png/jianbing.png",
+      "sha256": "e1d7ba1d1e87e1b1b52d04d0fb395a91032cd5941ce5bd176c4911991065a8ec",
+      "bytes": 466508,
+      "executable": false
+    },
+    {
+      "path": "assets/png/jiangxiangbing.png",
+      "sha256": "9e50217d4d5eba33dc6c963a623ab54b884b306bec53669cb62cba5db6e7d718",
+      "bytes": 296217,
+      "executable": false
+    },
+    {
+      "path": "assets/png/kimchi.png",
+      "sha256": "63e1b69637ec8e0f5329b6945d0e1daa3821a158cb65414826a2b2530c041579",
+      "bytes": 383281,
+      "executable": false
+    },
+    {
+      "path": "assets/png/laomo.png",
+      "sha256": "39ac9aa85caf5d6a20a98ab35b5c8222f2058089619c4523d4f261fbe612af21",
+      "bytes": 286422,
+      "executable": false
+    },
+    {
+      "path": "assets/png/lettuce.png",
+      "sha256": "ae810e5bf22dbfff849eed3338efcdcf2adc969b2d9831ca7b8f17cf079defaa",
+      "bytes": 465393,
+      "executable": false
+    },
+    {
+      "path": "assets/png/mushroomchickennoodles.png",
+      "sha256": "579f3accfb5c693df2a429549f06438df2264d7b3cb479cabaf856dbfd1fd0ed",
+      "bytes": 425141,
+      "executable": false
+    },
+    {
+      "path": "assets/png/nuggets.png",
+      "sha256": "d9b6ae135ed9e1b018c8ac561c3717434c9cf19ebb28a4aea5e3d42d18017c1f",
+      "bytes": 333579,
+      "executable": false
+    },
+    {
+      "path": "assets/png/onion.png",
+      "sha256": "12b5422311a32ee0dfab1e22c6edc722c52cd7b303fc3a12f1206b2089548e53",
+      "bytes": 521500,
+      "executable": false
+    },
+    {
+      "path": "assets/png/panfriedbun.png",
+      "sha256": "2f58ddc6a4184fa8bb159d2fcab7a01db31d9c52557f1d22e3f5f8771ef8079c",
+      "bytes": 245468,
+      "executable": false
+    },
+    {
+      "path": "assets/png/pickledpepperrings.png",
+      "sha256": "4b0b3d875a3a2b7127a74079f42e030c1c1f23c251d2c50247adf5e493f8b563",
+      "bytes": 268689,
+      "executable": false
+    },
+    {
+      "path": "assets/png/porkguokui.png",
+      "sha256": "7e3b2dff4aeea46a32b13401f4da1f926f21afe6657dee0acb283aa60e22efe0",
+      "bytes": 338904,
+      "executable": false
+    },
+    {
+      "path": "assets/png/porridge.png",
+      "sha256": "3c12f88d02349af56be52af4ba34e311920957731a7f2322caf0e908079001d1",
+      "bytes": 304102,
+      "executable": false
+    },
+    {
+      "path": "assets/png/ramen.png",
+      "sha256": "0eafa26e5538db99d7b8a7aaf54514cd775c435a7d089fc264bff4ace3d9d1ce",
+      "bytes": 369013,
+      "executable": false
+    },
+    {
+      "path": "assets/png/redbeanguokui.png",
+      "sha256": "5711b27fe647d9acb6a66cc082928cb1819a8f9e30800c444d4aeb2965cded52",
+      "bytes": 365453,
+      "executable": false
+    },
+    {
+      "path": "assets/png/redbeanpie.png",
+      "sha256": "5ae5a0a0bc7fedffdac8d87aee11dbcfbad5404c127ac9e59db258a77db5ab2b",
+      "bytes": 336078,
+      "executable": false
+    },
+    {
+      "path": "assets/png/rice.png",
+      "sha256": "99ec4762b81a04a4162d71f1d126ec108cf49b321a892b16d322e8aeea47fdd3",
+      "bytes": 263315,
+      "executable": false
+    },
+    {
+      "path": "assets/png/salad.png",
+      "sha256": "0a99ac354f7db0aee92d4374d1b414ea6341cdc3f9c588c1fd6ed94c6393996e",
+      "bytes": 490878,
+      "executable": false
+    },
+    {
+      "path": "assets/png/sausage.png",
+      "sha256": "c7e41dfd5473be82c85d8887bbcaa1fe6d3f46a8b04939178a863a564017a239",
+      "bytes": 221285,
+      "executable": false
+    },
+    {
+      "path": "assets/png/searedsushiplatter.png",
+      "sha256": "dba25ca5ce16201aeda979dde95c8c55f8c6e83170027c1645662ab46509c2e9",
+      "bytes": 346235,
+      "executable": false
+    },
+    {
+      "path": "assets/png/shaobing.png",
+      "sha256": "3a06f25ec02178a5620eb8c5430a8d53cc75a0c47448bdb4aa8eb96db0132178",
+      "bytes": 559309,
+      "executable": false
+    },
+    {
+      "path": "assets/png/sourplumdrink.png",
+      "sha256": "62329cf1f289408d2bf805561b4e0a2c983cec019e078471919a597caa3de446",
+      "bytes": 375527,
+      "executable": false
+    },
+    {
+      "path": "assets/png/sushi.png",
+      "sha256": "637480bd18c646b0d6d6dcb99454b3a0f34b1730b9d8aff543862b42fef2d585",
+      "bytes": 276969,
+      "executable": false
+    },
+    {
+      "path": "assets/png/sweetpickledradish.png",
+      "sha256": "f5afa234df25db54adebafa6bfbb727cda604846c08f921b4770f4b531cf233b",
+      "bytes": 219132,
+      "executable": false
+    },
+    {
+      "path": "assets/png/tomatochickenrice.png",
+      "sha256": "36822d37c0b94569607e24e361c86ad0bf78cf58ca9444c3b2ff85c29d8b721c",
+      "bytes": 529983,
+      "executable": false
+    },
+    {
+      "path": "assets/png/wholeegg.png",
+      "sha256": "6264d2970e49d41c9e4b9b20eae3c15d752d4223b845e71ffed58576b6e1d2f9",
+      "bytes": 177550,
+      "executable": false
+    },
+    {
+      "path": "assets/png/wrap.png",
+      "sha256": "180ace90cfb33988b678ce63542cc822f1c7c4df29c24b64fb90d48d8d8bd62c",
+      "bytes": 415763,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/braisedegg.webp",
+      "sha256": "984f89c3db55cc1e6a0d3c834852e58b5f44977f134a34bd2ef22b0d54580a0b",
+      "bytes": 15534,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/burger.webp",
+      "sha256": "6017a5ea62e82feb6b18c92752903464cad704582284c9ccb217e57898813b67",
+      "bytes": 84596,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/cabbage.webp",
+      "sha256": "82fedd4f4eab1a48206e8d9f9ae255c56fa650ad6ed7f3240833de58ccd0f7e8",
+      "bytes": 39182,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/chaobingsi.webp",
+      "sha256": "544031a5882d6fb76275d0cfbb7a83e8242f0c9dabc9278e7f71a068658db66f",
+      "bytes": 68072,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/chestnutchickenrice.webp",
+      "sha256": "6dc4d61cfa9ac9e0c13049a94a07477e0b9efb64d4f9e04ee73fbc7094471fa6",
+      "bytes": 71704,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/chickenbreast.webp",
+      "sha256": "4e50c1063e8036f4383ee2e3fc0a08ad11c06134df6c699c470c6cf2794ba35d",
+      "bytes": 57018,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/chickenburger.webp",
+      "sha256": "eeaacdd7fee6d065e478bce57771451d71f0f44f40473a9b83958e311092c4b5",
+      "bytes": 53226,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/chickenthighroll.webp",
+      "sha256": "68c3597d93b127fb641151b01976e741bcec4a69078e1fc7b234bffeac8042de",
+      "bytes": 49280,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/chickenwrap.webp",
+      "sha256": "a45c6c4e12df42332e7cba33fc3cc81fed588d630869c5ac05ff3d198319ac58",
+      "bytes": 48516,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/coconutoat.webp",
+      "sha256": "1d80ef055e64f559133442f85dfc933a5852cf36a8b3fc8b06c95fba746bd30f",
+      "bytes": 30386,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/cola.webp",
+      "sha256": "490aeda356dce8229cc8adaa68e2ad556c5dda45ea3227ea34309123a21ebea0",
+      "bytes": 29760,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/coldnoodles.webp",
+      "sha256": "5b2592e1fb984b5190bb2dd954640eef54172022cba4015c55459c31411b79df",
+      "bytes": 53460,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/cookednoodles.webp",
+      "sha256": "97cb32b3b32a047e6f5952cdd1197c322c13df86f24266bfd34f73c938370333",
+      "bytes": 38942,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/cookies.webp",
+      "sha256": "c840e71780d48bacfa4d6659b6a0288af10d70a2e1d4ee335c8d801185ddc123",
+      "bytes": 40012,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/cutwatermelon.webp",
+      "sha256": "fdc4d29748d1d89e059788fdc9017fd5fcc9ba922db1ed7f8e6c06708073d529",
+      "bytes": 46704,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/doublechickenburger.webp",
+      "sha256": "7dbb07097d7add03f91d78c848585b4b58a66851d20f516f43ef2752e4942f17",
+      "bytes": 43826,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/drumstick.webp",
+      "sha256": "dbf577bcfe2f4aa64fe452a0849fcadf25aead7c4ccb9c710bd13f5b697fece0",
+      "bytes": 36618,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/drynoodles.webp",
+      "sha256": "1efeffe6c709ecc76f7c5a475e18a19cb11a26b692eb8cbd4c9a72a57038eafc",
+      "bytes": 55576,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/dumpling.webp",
+      "sha256": "0e90d525d5945239fb849ba25b9bd1cb0858a444c886a631605154dd68a02244",
+      "bytes": 40162,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/egg.webp",
+      "sha256": "2e6165c616ba8e5a4c758c27075d4336999a4dafead5c5900866551355b2753a",
+      "bytes": 42316,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/eggtart.webp",
+      "sha256": "1db7de3bd00f9153410c992d1b3b1b9267f2e98282acd6b6f126b4d669e0d8e2",
+      "bytes": 59188,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/eighttreasure.webp",
+      "sha256": "bb0e11ce1f1ecb0d3062a9d31b39a1268abff94082d5bb3c0f6fdd090f32d7d5",
+      "bytes": 59890,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/eighttreasurecup.webp",
+      "sha256": "cad91156f2178e07b33e4a7c66ebb3f343c25eae7e42471c5784765e5cb95f6c",
+      "bytes": 32678,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/fishtofu.webp",
+      "sha256": "75ca0f35e214b009db0ca7f137c735124f96632a4f16e11785e756c252753ae6",
+      "bytes": 32168,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/flatbread.webp",
+      "sha256": "70e9d2f43a523919236a79e8588402fa94d7bb1a91c82bd24ac827adf91218c5",
+      "bytes": 57176,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/fruityogurt.webp",
+      "sha256": "e6e341d837a78d54553a9c7bfb9b9b7d2acee596e5d31d44c1ac8aed3abfd4f2",
+      "bytes": 48782,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/glutenroll.webp",
+      "sha256": "a926b338df0d4a81770a3cd630c1df137620478be496e20372313595e4baea46",
+      "bytes": 41146,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/glutenskewer.webp",
+      "sha256": "a404c65a98ddc3b51853161f52bc8981637303572dc09f76ad3398aa1d505cde",
+      "bytes": 36052,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/jianbing.webp",
+      "sha256": "64186094479b753861c0106a6d49169782f6b17e4eac278903ff9eb752602c12",
+      "bytes": 61852,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/jiangxiangbing.webp",
+      "sha256": "8ddc57f2bae30090c1fc9e73583245dd3576da7ce39a6f74c4262a0e9efa4462",
+      "bytes": 44168,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/kimchi.webp",
+      "sha256": "b7376b82beeb630637d0b30d4957b00f1b94bccfaf1db3281b004616c2436305",
+      "bytes": 44918,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/laomo.webp",
+      "sha256": "80df37ec57a0b304edd5b87b65c4b4770d34302944ce9bb3c0e0d5bcd2979f03",
+      "bytes": 35706,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/lettuce.webp",
+      "sha256": "2ef7e1dee552cc5c24eda999bd61d29065ac3444ac6a83ad424fca35d947bea5",
+      "bytes": 59990,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/mushroomchickennoodles.webp",
+      "sha256": "47f56f5d58be9b3820f0384d7de6a0f64903436588fba2b6782297e65c05753b",
+      "bytes": 49670,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/nuggets.webp",
+      "sha256": "3b7d060f671ad9b89594b72903d1d4a41cc594b74b031f1dcdd19bd112499c2b",
+      "bytes": 38788,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/onion.webp",
+      "sha256": "d4f4bd13bdb2a291b8c5f36a0863a6a42ef81bcdbdaa8ae8f775dfdea5c994f3",
+      "bytes": 86094,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/panfriedbun.webp",
+      "sha256": "848097d3074109db7a7773293299a000c766fbf7562fb5605ce09bb66d89c94f",
+      "bytes": 33302,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/pickledpepperrings.webp",
+      "sha256": "d2d5234198e90306a2757b62cd10e0cbd6ddb17a184d314bcfab2a7645d051b1",
+      "bytes": 32156,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/porkguokui.webp",
+      "sha256": "40d63957bb11881ce900023a79cb1de0ea7d7b2be3c95933fdd8ad2a6520ca9f",
+      "bytes": 48182,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/porridge.webp",
+      "sha256": "5124ff94492983896f0002309daee9bf6f6bd5ca8871dd2b068a031990bab7c5",
+      "bytes": 36072,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/ramen.webp",
+      "sha256": "f0001e500277ad8f69e74db141b738d64b018fdefaf814f5445114b8a9d24e9d",
+      "bytes": 47066,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/redbeanguokui.webp",
+      "sha256": "d92335498b2cdf9470d6f149d407c6a2c3e7747e3adea2b8edb3c240cf3424f8",
+      "bytes": 44346,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/redbeanpie.webp",
+      "sha256": "fd9955f6a06089f9d628a087bbc1d996cebe7daff544777ae37367fef3e6ab61",
+      "bytes": 40802,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/rice.webp",
+      "sha256": "44b2e2ef69e4545c0fcc483a229e66f264267f09960ce259e8005dac3c4f7d09",
+      "bytes": 26902,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/salad.webp",
+      "sha256": "d948f447afb96afc546589282b943508f6f3d58d36999eb76bff2de6d159444a",
+      "bytes": 70702,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/sausage.webp",
+      "sha256": "51e83bde1d3b99d966af31537abd0b6011f8bc5ebc23d550ba1ab09877e41a97",
+      "bytes": 23196,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/searedsushiplatter.webp",
+      "sha256": "50d667f4a4bdafc20e8e4b1c865c4df5d61cf5914fa4219fa81531b5ed9fa44a",
+      "bytes": 49156,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/shaobing.webp",
+      "sha256": "ee623c3cf991c4558a82fb4170978e9b1e224cca0bac59d2e80b5501fd8ef25f",
+      "bytes": 75820,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/sourplumdrink.webp",
+      "sha256": "7bbf4eb81ce72300485c95920b2e76e0d4f306cb8e34a5c84dc06b42d52451ac",
+      "bytes": 55552,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/sushi.webp",
+      "sha256": "e8cd40e195fc6811760f88a06f1eb7e085172ab268759801f278f3515e6de920",
+      "bytes": 33332,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/sweetpickledradish.webp",
+      "sha256": "06a698e1f1ec002c62ac00a6e08fe0d58fccad446fb0a1ee961db897a2d29117",
+      "bytes": 24736,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/tomatochickenrice.webp",
+      "sha256": "acd859afd9c70507e60c4ec515ab27bf06e7339d2ac525ab3cf35b0c1cfdb65f",
+      "bytes": 75742,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/wholeegg.webp",
+      "sha256": "c93a0f4719f5b60af2531acfdf7fd858a55bf9b05c815c858e9b6d611d9ca329",
+      "bytes": 21830,
+      "executable": false
+    },
+    {
+      "path": "assets/webp/wrap.webp",
+      "sha256": "501bf1d8cd1083436ed5286cf8364ecc93449e39b6302ad1547c5d2f87f7b81a",
+      "bytes": 61134,
+      "executable": false
+    },
+    {
+      "path": "catalog.json",
+      "sha256": "26735d73d23b80714f9a25e593372b46954453e0d333920c09311d7237899524",
+      "bytes": 81892,
+      "executable": false
+    },
+    {
+      "path": "deno.json",
+      "sha256": "bd2681517aa210e38ef8247a79a858f136db8ae9cb02d72f6d0675336f2df26f",
+      "bytes": 1698,
+      "executable": false
+    },
+    {
+      "path": "docs/icon.svg",
+      "sha256": "569d2890c61d05a1c4ecab3c6820bf85a1058c8df462931951e368bc1210c043",
+      "bytes": 831,
+      "executable": false
+    },
+    {
+      "path": "foods.json",
+      "sha256": "d8b4ccca70771bdf47723fa8e5e44d91d041aa1ebd24d93ae075eea14cebe954",
+      "bytes": 9239,
+      "executable": false
+    },
+    {
+      "path": "previews/overview.png",
+      "sha256": "4d095931d9fc7e246dc3bdf5d33643b3e5afd14f7b089f681051cd0b08f5bff3",
+      "bytes": 1610750,
+      "executable": false
+    },
+    {
+      "path": "previews/overview.svg",
+      "sha256": "6b006d47a766b99ea5cb203f3fdb4b7fb7f6375cf5d3860c25b2858f9e2b4de9",
+      "bytes": 3387576,
+      "executable": false
+    },
+    {
+      "path": "previews/receipt.json",
+      "sha256": "f5d813876ad2042fde70893db3991595942756cf81ff561e232ae4b1ec552396",
+      "bytes": 269,
+      "executable": false
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "f93848b93e9cd9167d8c7a2c255dcc71a547b0b27414f1c4e45971321a8ed3ad",
+      "bytes": 30589,
+      "executable": false
+    },
+    {
+      "path": "public-files.json",
+      "sha256": "eb323785d159a8acd9dbc46f958d6d311ea6c558cbc0b2f77eca24e78c32b3af",
+      "bytes": 4620,
+      "executable": false
+    },
+    {
+      "path": "scripts/build.ts",
+      "sha256": "43d6b6e1651514f314fb632850d78f284e6353b732292780c729d5fb3812a650",
+      "bytes": 2704,
+      "executable": false
+    },
+    {
+      "path": "scripts/export-preview.ts",
+      "sha256": "6170c3ed0ac0b468e018b2e64fec6c1808064b3cb5bd4ae0d4628493b274481f",
+      "bytes": 6138,
+      "executable": false
+    },
+    {
+      "path": "scripts/preview.ts",
+      "sha256": "64f60c9d5424427862f5b0a622346565208a7f26cb89191c6051e806b1ad489b",
+      "bytes": 288,
+      "executable": false
+    },
+    {
+      "path": "scripts/public-check.ts",
+      "sha256": "dc4a5f3902243c57a668fced3141433fb21d04ed43db6a5372c519748ff2284e",
+      "bytes": 9478,
+      "executable": false
+    },
+    {
+      "path": "scripts/serve-preview.ts",
+      "sha256": "b09a4e11f6b098d11edefa39cf19d85b3e3dac026b748d087711ce7166463c13",
+      "bytes": 671,
+      "executable": false
+    },
+    {
+      "path": "scripts/setup.sh",
+      "sha256": "914e6ff840dc40aae5be719a7ac529ea86cb696a577adca1d9592b6491953d99",
+      "bytes": 1369,
+      "executable": false
+    },
+    {
+      "path": "scripts/verify.ts",
+      "sha256": "2c89dccc1511980aa1f6c08f35c7b1e2e6feff13a0e48ef486478e2186fce6c1",
+      "bytes": 1705,
+      "executable": false
+    },
+    {
+      "path": "selected.json",
+      "sha256": "46569dd583bbd28d207c555140ac724e74a0d93452312dd9de7b5cb9992dc849",
+      "bytes": 10925,
+      "executable": false
+    },
+    {
+      "path": "src/catalog.ts",
+      "sha256": "eb83047501c52fa172214a14c4304a1d0dbb9ed36c68d35de4b2c4abee3bfdd3",
+      "bytes": 4597,
+      "executable": false
+    },
+    {
+      "path": "src/gallery.html",
+      "sha256": "8466ae10434eec6ddfca90fef8631ff41a875454d10172f1014ea7a77c925a95",
+      "bytes": 6470,
+      "executable": false
+    },
+    {
+      "path": "src/gallery.js",
+      "sha256": "24d5c28ec41dfa57116b76ef3d4ec56d8c6848462f8648e633c7cdd1d15eb9ba",
+      "bytes": 6331,
+      "executable": false
+    },
+    {
+      "path": "src/overview.ts",
+      "sha256": "246893ba661cbb007366ac891e29d22a322ab72744ba8e7ff80c682e0fa0bca9",
+      "bytes": 1615,
+      "executable": false
+    },
+    {
+      "path": "src/preview_receipt.ts",
+      "sha256": "6c2f9a407eec80eda0959e8bfb82c6030f87cc3682de8195939fa0fc75d4486e",
+      "bytes": 670,
+      "executable": false
+    },
+    {
+      "path": "src/preview_server.ts",
+      "sha256": "5c67b74f6cf06fbbd86f0beff0ac7988460dd841ef9edc178a8d66f78370e743",
+      "bytes": 663,
+      "executable": false
+    },
+    {
+      "path": "src/selected_catalog.ts",
+      "sha256": "5acb13a37b6716eaeb371163422b8c28f37dbe998d55ec37d186a11dab1808e6",
+      "bytes": 3601,
+      "executable": false
+    },
+    {
+      "path": "tests/portability_test.ts",
+      "sha256": "d90e511fe4d72df80fb5c8622ba68f7548c5d795b93e5c7f9b52dd95e00e54a4",
+      "bytes": 10101,
+      "executable": false
+    }
+  ],
+  "releaseBlockers": [],
+  "limitations": [
+    "Working files only; Git index/history and remote state require separate review.",
+    "Pattern checks are not a complete secret or rights audit."
+  ]
+}

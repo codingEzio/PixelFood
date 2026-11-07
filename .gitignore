@@ -1,0 +1,8 @@
+Local/
+.DS_Store
+.env
+.env.*
+node_modules/
+previews/.render-*/
+previews/delete_after_use_render_*/
+previews/.selected-build-*/

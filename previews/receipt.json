@@ -1,0 +1,6 @@
+{
+  "renderer": "local librsvg rsvg-convert and dwebp; selected exports only",
+  "decodedImages": 54,
+  "svgSha256": "6b006d47a766b99ea5cb203f3fdb4b7fb7f6375cf5d3860c25b2858f9e2b4de9",
+  "pngSha256": "4d095931d9fc7e246dc3bdf5d33643b3e5afd14f7b089f681051cd0b08f5bff3"
+}

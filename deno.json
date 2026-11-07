@@ -1,0 +1,28 @@
+{
+  "exclude": [
+    "Local"
+  ],
+  "fmt": {
+    "exclude": [
+      "catalog.json",
+      "previews",
+      "src/gallery.html",
+      "docs/icon.svg"
+    ]
+  },
+  "tasks": {
+    "build": "deno run --allow-read=foods.json,provenance.json,assets,src,LICENSE-SCOPE.json,selected.json,candidate-receipt.json,catalog.json,previews --allow-write=catalog.json,previews scripts/build.ts",
+    "verify": "deno run --allow-read=foods.json,provenance.json,assets,src,LICENSE-SCOPE.json,selected.json,candidate-receipt.json,catalog.json,previews scripts/verify.ts",
+    "check": "deno check scripts/*.ts src/*.ts tests/*.ts",
+    "lint": "deno lint src scripts tests",
+    "preview": "deno run --allow-read=foods.json,provenance.json,assets,src,LICENSE-SCOPE.json,selected.json,candidate-receipt.json --allow-write=Local scripts/preview.ts",
+    "preview:serve": "deno run --allow-read=foods.json,provenance.json,assets,src,LICENSE-SCOPE.json,selected.json,candidate-receipt.json --allow-net=127.0.0.1 scripts/serve-preview.ts",
+    "preview:png": "deno run --allow-read=foods.json,provenance.json,assets,src,LICENSE-SCOPE.json,selected.json,candidate-receipt.json,previews,Local --allow-write=Local --allow-run=ego-browser,rsvg-convert,dwebp scripts/export-preview.ts",
+    "setup": "sh scripts/setup.sh",
+    "demo": "deno task preview:serve",
+    "public:check": "deno run --allow-read scripts/public-check.ts",
+    "public:prepare": "deno task verify && deno run --allow-read --allow-write=Local scripts/public-check.ts --export",
+    "public:release-check": "deno run --allow-read scripts/public-check.ts --release",
+    "test": "deno test --allow-read=. --allow-write=Local --allow-run=deno tests"
+  }
+}

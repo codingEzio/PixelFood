@@ -1,0 +1,605 @@
+{
+  "schemaVersion": 1,
+  "project": "X-PixelFood",
+  "decisionDate": "2026-10-22",
+  "status": "selected-artwork-approved-for-publication",
+  "code": {
+    "license": "MIT",
+    "licenseFile": "LICENSE",
+    "files": [
+      "deno.json",
+      "scripts/build.ts",
+      "scripts/export-preview.ts",
+      "scripts/preview.ts",
+      "scripts/public-check.ts",
+      "scripts/serve-preview.ts",
+      "scripts/setup.sh",
+      "scripts/verify.ts",
+      "src/catalog.ts",
+      "src/gallery.html",
+      "src/gallery.js",
+      "src/overview.ts",
+      "src/preview_receipt.ts",
+      "src/preview_server.ts",
+      "src/selected_catalog.ts",
+      "tests/portability_test.ts"
+    ],
+    "boundary": "Project-authored software and documentation only; embedded artwork/image payloads and third-party components are excluded from MIT. Retained third-party notices take precedence."
+  },
+  "artwork": {
+    "selectedLicense": "CC-BY-4.0",
+    "licenseFile": "LICENSE-ARTWORK.md",
+    "selectionStatus": "reviewed-local-artwork-selection",
+    "selectionBasis": "Exact source/export receipts and per-asset visual/container review; generic naming or AI generation alone is not proof of rights.",
+    "visualReview": "performed-2026-10-22",
+    "rightsReview": "bounded-source-and-visible-content-review; no-universal-legal-clearance",
+    "metadataReview": "export-container-reviewed-2026-10-22",
+    "historicalReceipts": "Original provenance/manifest license fields record import-time status and remain unchanged; this file records the current selection.",
+    "assets": [
+      {
+        "id": "burger",
+        "file": "assets/webp/burger.webp",
+        "sha256": "6017a5ea62e82feb6b18c92752903464cad704582284c9ccb217e57898813b67",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "wrap",
+        "file": "assets/webp/wrap.webp",
+        "sha256": "501bf1d8cd1083436ed5286cf8364ecc93449e39b6302ad1547c5d2f87f7b81a",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "onion",
+        "file": "assets/webp/onion.webp",
+        "sha256": "d4f4bd13bdb2a291b8c5f36a0863a6a42ef81bcdbdaa8ae8f775dfdea5c994f3",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "dumpling",
+        "file": "assets/webp/dumpling.webp",
+        "sha256": "0e90d525d5945239fb849ba25b9bd1cb0858a444c886a631605154dd68a02244",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "drumstick",
+        "file": "assets/webp/drumstick.webp",
+        "sha256": "dbf577bcfe2f4aa64fe452a0849fcadf25aead7c4ccb9c710bd13f5b697fece0",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "rice",
+        "file": "assets/webp/rice.webp",
+        "sha256": "44b2e2ef69e4545c0fcc483a229e66f264267f09960ce259e8005dac3c4f7d09",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "cabbage",
+        "file": "assets/webp/cabbage.webp",
+        "sha256": "82fedd4f4eab1a48206e8d9f9ae255c56fa650ad6ed7f3240833de58ccd0f7e8",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "kimchi",
+        "file": "assets/webp/kimchi.webp",
+        "sha256": "b7376b82beeb630637d0b30d4957b00f1b94bccfaf1db3281b004616c2436305",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "sausage",
+        "file": "assets/webp/sausage.webp",
+        "sha256": "51e83bde1d3b99d966af31537abd0b6011f8bc5ebc23d550ba1ab09877e41a97",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "egg",
+        "file": "assets/webp/egg.webp",
+        "sha256": "2e6165c616ba8e5a4c758c27075d4336999a4dafead5c5900866551355b2753a",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "nuggets",
+        "file": "assets/webp/nuggets.webp",
+        "sha256": "3b7d060f671ad9b89594b72903d1d4a41cc594b74b031f1dcdd19bd112499c2b",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "sushi",
+        "file": "assets/webp/sushi.webp",
+        "sha256": "e8cd40e195fc6811760f88a06f1eb7e085172ab268759801f278f3515e6de920",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "flatbread",
+        "file": "assets/webp/flatbread.webp",
+        "sha256": "70e9d2f43a523919236a79e8588402fa94d7bb1a91c82bd24ac827adf91218c5",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "porridge",
+        "file": "assets/webp/porridge.webp",
+        "sha256": "5124ff94492983896f0002309daee9bf6f6bd5ca8871dd2b068a031990bab7c5",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "ramen",
+        "file": "assets/webp/ramen.webp",
+        "sha256": "f0001e500277ad8f69e74db141b738d64b018fdefaf814f5445114b8a9d24e9d",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "chickenbreast",
+        "file": "assets/webp/chickenbreast.webp",
+        "sha256": "4e50c1063e8036f4383ee2e3fc0a08ad11c06134df6c699c470c6cf2794ba35d",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "lettuce",
+        "file": "assets/webp/lettuce.webp",
+        "sha256": "2ef7e1dee552cc5c24eda999bd61d29065ac3444ac6a83ad424fca35d947bea5",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "cookies",
+        "file": "assets/webp/cookies.webp",
+        "sha256": "c840e71780d48bacfa4d6659b6a0288af10d70a2e1d4ee335c8d801185ddc123",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "shaobing",
+        "file": "assets/webp/shaobing.webp",
+        "sha256": "ee623c3cf991c4558a82fb4170978e9b1e224cca0bac59d2e80b5501fd8ef25f",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "eighttreasure",
+        "file": "assets/webp/eighttreasure.webp",
+        "sha256": "bb0e11ce1f1ecb0d3062a9d31b39a1268abff94082d5bb3c0f6fdd090f32d7d5",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "eighttreasurecup",
+        "file": "assets/webp/eighttreasurecup.webp",
+        "sha256": "cad91156f2178e07b33e4a7c66ebb3f343c25eae7e42471c5784765e5cb95f6c",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "coconutoat",
+        "file": "assets/webp/coconutoat.webp",
+        "sha256": "1d80ef055e64f559133442f85dfc933a5852cf36a8b3fc8b06c95fba746bd30f",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "salad",
+        "file": "assets/webp/salad.webp",
+        "sha256": "d948f447afb96afc546589282b943508f6f3d58d36999eb76bff2de6d159444a",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "coldnoodles",
+        "file": "assets/webp/coldnoodles.webp",
+        "sha256": "5b2592e1fb984b5190bb2dd954640eef54172022cba4015c55459c31411b79df",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "chickenburger",
+        "file": "assets/webp/chickenburger.webp",
+        "sha256": "eeaacdd7fee6d065e478bce57771451d71f0f44f40473a9b83958e311092c4b5",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "chickenwrap",
+        "file": "assets/webp/chickenwrap.webp",
+        "sha256": "a45c6c4e12df42332e7cba33fc3cc81fed588d630869c5ac05ff3d198319ac58",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "cola",
+        "file": "assets/webp/cola.webp",
+        "sha256": "490aeda356dce8229cc8adaa68e2ad556c5dda45ea3227ea34309123a21ebea0",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "cookednoodles",
+        "file": "assets/webp/cookednoodles.webp",
+        "sha256": "97cb32b3b32a047e6f5952cdd1197c322c13df86f24266bfd34f73c938370333",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "drynoodles",
+        "file": "assets/webp/drynoodles.webp",
+        "sha256": "1efeffe6c709ecc76f7c5a475e18a19cb11a26b692eb8cbd4c9a72a57038eafc",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "glutenroll",
+        "file": "assets/webp/glutenroll.webp",
+        "sha256": "a926b338df0d4a81770a3cd630c1df137620478be496e20372313595e4baea46",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "chaobingsi",
+        "file": "assets/webp/chaobingsi.webp",
+        "sha256": "544031a5882d6fb76275d0cfbb7a83e8242f0c9dabc9278e7f71a068658db66f",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "panfriedbun",
+        "file": "assets/webp/panfriedbun.webp",
+        "sha256": "848097d3074109db7a7773293299a000c766fbf7562fb5605ce09bb66d89c94f",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "wholeegg",
+        "file": "assets/webp/wholeegg.webp",
+        "sha256": "c93a0f4719f5b60af2531acfdf7fd858a55bf9b05c815c858e9b6d611d9ca329",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "redbeanguokui",
+        "file": "assets/webp/redbeanguokui.webp",
+        "sha256": "d92335498b2cdf9470d6f149d407c6a2c3e7747e3adea2b8edb3c240cf3424f8",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "porkguokui",
+        "file": "assets/webp/porkguokui.webp",
+        "sha256": "40d63957bb11881ce900023a79cb1de0ea7d7b2be3c95933fdd8ad2a6520ca9f",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "glutenskewer",
+        "file": "assets/webp/glutenskewer.webp",
+        "sha256": "a404c65a98ddc3b51853161f52bc8981637303572dc09f76ad3398aa1d505cde",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "fishtofu",
+        "file": "assets/webp/fishtofu.webp",
+        "sha256": "75ca0f35e214b009db0ca7f137c735124f96632a4f16e11785e756c252753ae6",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "laomo",
+        "file": "assets/webp/laomo.webp",
+        "sha256": "80df37ec57a0b304edd5b87b65c4b4770d34302944ce9bb3c0e0d5bcd2979f03",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "jianbing",
+        "file": "assets/webp/jianbing.webp",
+        "sha256": "64186094479b753861c0106a6d49169782f6b17e4eac278903ff9eb752602c12",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "eggtart",
+        "file": "assets/webp/eggtart.webp",
+        "sha256": "1db7de3bd00f9153410c992d1b3b1b9267f2e98282acd6b6f126b4d669e0d8e2",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "redbeanpie",
+        "file": "assets/webp/redbeanpie.webp",
+        "sha256": "fd9955f6a06089f9d628a087bbc1d996cebe7daff544777ae37367fef3e6ab61",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "sourplumdrink",
+        "file": "assets/webp/sourplumdrink.webp",
+        "sha256": "7bbf4eb81ce72300485c95920b2e76e0d4f306cb8e34a5c84dc06b42d52451ac",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "chickenthighroll",
+        "file": "assets/webp/chickenthighroll.webp",
+        "sha256": "68c3597d93b127fb641151b01976e741bcec4a69078e1fc7b234bffeac8042de",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "mushroomchickennoodles",
+        "file": "assets/webp/mushroomchickennoodles.webp",
+        "sha256": "47f56f5d58be9b3820f0384d7de6a0f64903436588fba2b6782297e65c05753b",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "pickledpepperrings",
+        "file": "assets/webp/pickledpepperrings.webp",
+        "sha256": "d2d5234198e90306a2757b62cd10e0cbd6ddb17a184d314bcfab2a7645d051b1",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "sweetpickledradish",
+        "file": "assets/webp/sweetpickledradish.webp",
+        "sha256": "06a698e1f1ec002c62ac00a6e08fe0d58fccad446fb0a1ee961db897a2d29117",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "fruityogurt",
+        "file": "assets/webp/fruityogurt.webp",
+        "sha256": "e6e341d837a78d54553a9c7bfb9b9b7d2acee596e5d31d44c1ac8aed3abfd4f2",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "cutwatermelon",
+        "file": "assets/webp/cutwatermelon.webp",
+        "sha256": "fdc4d29748d1d89e059788fdc9017fd5fcc9ba922db1ed7f8e6c06708073d529",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "searedsushiplatter",
+        "file": "assets/webp/searedsushiplatter.webp",
+        "sha256": "50d667f4a4bdafc20e8e4b1c865c4df5d61cf5914fa4219fa81531b5ed9fa44a",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "tomatochickenrice",
+        "file": "assets/webp/tomatochickenrice.webp",
+        "sha256": "acd859afd9c70507e60c4ec515ab27bf06e7339d2ac525ab3cf35b0c1cfdb65f",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "doublechickenburger",
+        "file": "assets/webp/doublechickenburger.webp",
+        "sha256": "7dbb07097d7add03f91d78c848585b4b58a66851d20f516f43ef2752e4942f17",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "braisedegg",
+        "file": "assets/webp/braisedegg.webp",
+        "sha256": "984f89c3db55cc1e6a0d3c834852e58b5f44977f134a34bd2ef22b0d54580a0b",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "jiangxiangbing",
+        "file": "assets/webp/jiangxiangbing.webp",
+        "sha256": "8ddc57f2bae30090c1fc9e73583245dd3576da7ce39a6f74c4262a0e9efa4462",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      },
+      {
+        "id": "chestnutchickenrice",
+        "file": "assets/webp/chestnutchickenrice.webp",
+        "sha256": "6dc4d61cfa9ac9e0c13049a94a07477e0b9efb64d4f9e04ee73fbc7094471fa6",
+        "selection": "selected",
+        "license": "CC-BY-4.0-to-extent-of-owned-rights",
+        "visualReview": "performed-2026-10-22",
+        "reason": "Owner-commissioned generation receipt and matching retained original/export hashes; no recognizable brand text or logo in bounded visual review. AI origin is disclosed, not ownership proof.",
+        "metadataReview": "RIFF-only-VP8X-ALPH-VP8; no-EXIF-XMP-ICCP"
+      }
+    ],
+    "candidateCount": 0,
+    "excludedCount": 0,
+    "selectedCount": 54
+  },
+  "excludedRights": [
+    "Trademarks, trade dress, logos and other third-party rights are not granted.",
+    "Private originals, screenshots and full-library aggregate previews are not selected artwork; selected-only package previews contain selected assets only.",
+    "Bundled font files and notices retain their existing licenses; no MIT or CC override."
+  ],
+  "releaseBlockers": [],
+  "documentationArtwork": {
+    "decisionDate": "2026-10-28",
+    "license": "CC-BY-4.0",
+    "licenseFile": "ARTWORK-LICENSE.md",
+    "attribution": "codingEzio",
+    "file": "docs/icon.svg",
+    "sha256": "569d2890c61d05a1c4ecab3c6820bf85a1058c8df462931951e368bc1210c043",
+    "dimensions": [
+      120,
+      120
+    ],
+    "boundary": "Only this new original documentation SVG; existing collection artwork, fonts, third-party assets, private originals and Git history are outside this new grant."
+  },
+  "excludedFromThisPackage": 67,
+  "excludedCountSourceSnapshot": "2026-11-08"
+}

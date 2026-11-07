@@ -1,0 +1,488 @@
+[
+  {
+    "id": "burger",
+    "names": {
+      "en": "Burger",
+      "zh-TW": "漢堡",
+      "zh-CN": "汉堡"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "wrap",
+    "names": {
+      "en": "Chicken Wrap",
+      "zh-TW": "雞肉捲",
+      "zh-CN": "鸡肉卷"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "onion",
+    "names": {
+      "en": "Onion Ring",
+      "zh-TW": "洋蔥圈",
+      "zh-CN": "洋葱圈"
+    },
+    "category": "vegetables"
+  },
+  {
+    "id": "dumpling",
+    "names": {
+      "en": "Dumpling",
+      "zh-TW": "餃子",
+      "zh-CN": "饺子"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "drumstick",
+    "names": {
+      "en": "Chicken Drumstick",
+      "zh-TW": "雞腿",
+      "zh-CN": "鸡腿"
+    },
+    "category": "protein"
+  },
+  {
+    "id": "rice",
+    "names": {
+      "en": "Cooked Rice",
+      "zh-TW": "熟米飯",
+      "zh-CN": "熟米饭"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "cabbage",
+    "names": {
+      "en": "Napa Cabbage",
+      "zh-TW": "大白菜",
+      "zh-CN": "大白菜"
+    },
+    "category": "vegetables"
+  },
+  {
+    "id": "kimchi",
+    "names": {
+      "en": "Korean Kimchi",
+      "zh-TW": "韓式泡菜",
+      "zh-CN": "韩式泡菜"
+    },
+    "category": "vegetables"
+  },
+  {
+    "id": "sausage",
+    "names": {
+      "en": "Ham Sausage",
+      "zh-TW": "火腿腸",
+      "zh-CN": "火腿肠"
+    },
+    "category": "protein"
+  },
+  {
+    "id": "egg",
+    "names": {
+      "en": "Egg",
+      "zh-TW": "蛋",
+      "zh-CN": "鸡蛋"
+    },
+    "category": "protein"
+  },
+  {
+    "id": "nuggets",
+    "names": {
+      "en": "Chicken Nugget",
+      "zh-TW": "雞塊",
+      "zh-CN": "鸡块"
+    },
+    "category": "protein"
+  },
+  {
+    "id": "sushi",
+    "names": {
+      "en": "Sushi",
+      "zh-TW": "壽司",
+      "zh-CN": "寿司"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "flatbread",
+    "names": {
+      "en": "Flatbread",
+      "zh-TW": "麵餅",
+      "zh-CN": "面饼"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "porridge",
+    "names": {
+      "en": "Porridge",
+      "zh-TW": "粥",
+      "zh-CN": "粥"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "ramen",
+    "names": {
+      "en": "Ramen",
+      "zh-TW": "拉麵",
+      "zh-CN": "拉面"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "chickenbreast",
+    "names": {
+      "en": "Chicken Breast",
+      "zh-TW": "雞胸肉",
+      "zh-CN": "鸡胸肉"
+    },
+    "category": "protein"
+  },
+  {
+    "id": "lettuce",
+    "names": {
+      "en": "Lettuce",
+      "zh-TW": "生菜",
+      "zh-CN": "生菜"
+    },
+    "category": "vegetables"
+  },
+  {
+    "id": "cookies",
+    "names": {
+      "en": "Cookies",
+      "zh-TW": "餅乾",
+      "zh-CN": "饼干"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "shaobing",
+    "names": {
+      "en": "Meat Shaobing",
+      "zh-TW": "燒餅里脊",
+      "zh-CN": "烧饼里脊"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "eighttreasure",
+    "names": {
+      "en": "Eight Treasure Congee",
+      "zh-TW": "八寶粥",
+      "zh-CN": "八宝粥"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "eighttreasurecup",
+    "names": {
+      "en": "Eight Treasure Porridge Cup",
+      "zh-TW": "八寶粥（小杯外帶裝）",
+      "zh-CN": "八宝粥（小杯外带装）"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "coconutoat",
+    "names": {
+      "en": "Coconut Oat Porridge",
+      "zh-TW": "椰奶燕麥粥",
+      "zh-CN": "椰奶燕麦粥"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "salad",
+    "names": {
+      "en": "Mixed Salad",
+      "zh-TW": "綜合沙拉",
+      "zh-CN": "综合沙拉"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "coldnoodles",
+    "names": {
+      "en": "Grilled Cold Noodles",
+      "zh-TW": "烤冷麵",
+      "zh-CN": "烤冷面"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "chickenburger",
+    "names": {
+      "en": "Chicken Burger",
+      "zh-TW": "雞排堡",
+      "zh-CN": "鸡排堡"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "chickenwrap",
+    "names": {
+      "en": "Chicken Wrap",
+      "zh-TW": "雞排捲",
+      "zh-CN": "鸡排卷"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "cola",
+    "names": {
+      "en": "Cola",
+      "zh-TW": "可樂",
+      "zh-CN": "可乐"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "cookednoodles",
+    "names": {
+      "en": "Cooked Instant Noodles",
+      "zh-TW": "泡煮方便麵",
+      "zh-CN": "泡煮方便面"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "drynoodles",
+    "names": {
+      "en": "Dry Instant Noodles",
+      "zh-TW": "乾吃方便麵",
+      "zh-CN": "干吃方便面"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "glutenroll",
+    "names": {
+      "en": "Gluten Flatbread Roll",
+      "zh-TW": "烙馍卷麵筋",
+      "zh-CN": "烙馍卷面筋"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "chaobingsi",
+    "names": {
+      "en": "Stir-fried Shredded Flatbread",
+      "zh-TW": "炒餅絲",
+      "zh-CN": "炒饼丝"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "panfriedbun",
+    "names": {
+      "en": "Pan-fried Meat Bun",
+      "zh-TW": "肉煎包",
+      "zh-CN": "肉煎包"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "wholeegg",
+    "names": {
+      "en": "Whole Egg",
+      "zh-TW": "整顆雞蛋",
+      "zh-CN": "整颗鸡蛋"
+    },
+    "category": "protein"
+  },
+  {
+    "id": "redbeanguokui",
+    "names": {
+      "en": "Red Bean Guokui",
+      "zh-TW": "豆沙鍋盔",
+      "zh-CN": "豆沙锅盔"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "porkguokui",
+    "names": {
+      "en": "Preserved Mustard Pork Guokui",
+      "zh-TW": "梅菜扣肉鍋盔",
+      "zh-CN": "梅菜扣肉锅盔"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "glutenskewer",
+    "names": {
+      "en": "Gluten Skewer",
+      "zh-TW": "麵筋串",
+      "zh-CN": "面筋串"
+    },
+    "category": "protein"
+  },
+  {
+    "id": "fishtofu",
+    "names": {
+      "en": "Fish Tofu",
+      "zh-TW": "魚豆腐",
+      "zh-CN": "鱼豆腐"
+    },
+    "category": "protein"
+  },
+  {
+    "id": "laomo",
+    "names": {
+      "en": "Thin Laomo Flatbread",
+      "zh-TW": "小烙馍",
+      "zh-CN": "小烙馍"
+    },
+    "category": "grains"
+  },
+  {
+    "id": "jianbing",
+    "names": {
+      "en": "Multigrain Jianbing",
+      "zh-TW": "雜糧煎餅",
+      "zh-CN": "杂粮煎饼"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "eggtart",
+    "names": {
+      "en": "Egg Tart",
+      "zh-TW": "蛋撻",
+      "zh-CN": "蛋挞"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "redbeanpie",
+    "names": {
+      "en": "Red Bean Pie",
+      "zh-TW": "紅豆派",
+      "zh-CN": "红豆派"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "sourplumdrink",
+    "names": {
+      "en": "Sour Plum Drink",
+      "zh-TW": "酸梅湯",
+      "zh-CN": "酸梅汤"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "chickenthighroll",
+    "names": {
+      "en": "Chicken Thigh Flatbread Roll",
+      "zh-TW": "烙馍捲雞腿肉",
+      "zh-CN": "烙馍卷鸡腿肉"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "mushroomchickennoodles",
+    "names": {
+      "en": "Mushroom Chicken Mixed Noodles",
+      "zh-TW": "香菇雞丁拌麵",
+      "zh-CN": "香菇鸡丁拌面"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "pickledpepperrings",
+    "names": {
+      "en": "Pickled Chili Pepper Rings",
+      "zh-TW": "醃辣椒圈",
+      "zh-CN": "腌辣椒圈"
+    },
+    "category": "vegetables"
+  },
+  {
+    "id": "sweetpickledradish",
+    "names": {
+      "en": "Sweet-and-sour Pickled Radish Cubes",
+      "zh-TW": "酸甜蘿蔔丁",
+      "zh-CN": "酸甜萝卜丁"
+    },
+    "category": "vegetables"
+  },
+  {
+    "id": "fruityogurt",
+    "names": {
+      "en": "Mixed Fruit Yogurt Bowl",
+      "zh-TW": "綜合水果優格撈",
+      "zh-CN": "混合水果酸奶捞"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "cutwatermelon",
+    "names": {
+      "en": "Cut Watermelon",
+      "zh-TW": "西瓜果切",
+      "zh-CN": "西瓜果切"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "searedsushiplatter",
+    "names": {
+      "en": "Seared Sushi Platter",
+      "zh-TW": "炙燒壽司拼盤",
+      "zh-CN": "炙烧寿司拼盘"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "tomatochickenrice",
+    "names": {
+      "en": "Tomato Chicken Rice Bowl",
+      "zh-TW": "番茄雞肉飯",
+      "zh-CN": "番茄鸡肉饭"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "doublechickenburger",
+    "names": {
+      "en": "Double Chicken Burger",
+      "zh-TW": "雙雞堡",
+      "zh-CN": "双鸡堡"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "braisedegg",
+    "names": {
+      "en": "Five-spice Braised Egg",
+      "zh-TW": "五香滷蛋",
+      "zh-CN": "五香卤蛋"
+    },
+    "category": "snacks"
+  },
+  {
+    "id": "jiangxiangbing",
+    "names": {
+      "en": "Sauce Flatbread",
+      "zh-TW": "醬香餅",
+      "zh-CN": "酱香饼"
+    },
+    "category": "meals"
+  },
+  {
+    "id": "chestnutchickenrice",
+    "names": {
+      "en": "Chestnut Chicken Rice Bowl",
+      "zh-TW": "板栗雞肉濃湯飯",
+      "zh-CN": "板栗鸡肉浓汤饭"
+    },
+    "category": "meals"
+  }
+]
