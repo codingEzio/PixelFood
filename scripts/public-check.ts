@@ -1,3 +1,5 @@
+import { selectedOutputs } from "../src/selected_catalog.ts";
+
 // Inspect an explicit local review payload. This is not permission to publish.
 type Policy = { files: string[]; releaseBlockers: string[] };
 if (
@@ -30,9 +32,16 @@ const readJson = async (path: string) => {
   return JSON.parse(await Deno.readTextFile(path));
 };
 if (
-  !["LICENSE-SCOPE.json", "selected.json", "provenance.json"].every((p) =>
-    files.includes(p)
-  ) ||
+  ![
+    "LICENSE-SCOPE.json",
+    "selected.json",
+    "provenance.json",
+    "foods.json",
+    "catalog.json",
+    "previews/overview.svg",
+    "previews/overview.png",
+    "previews/receipt.json",
+  ].every((p) => files.includes(p)) ||
   files.includes("candidate-receipt.json")
 ) throw Error("Incomplete selection policy");
 const selectionScope = await readJson("LICENSE-SCOPE.json");
@@ -97,6 +106,34 @@ if (
   )
 ) {
   throw Error("Payload artwork differs from reviewed selection");
+}
+// The approved metadata and source receipts are pinned independently of the
+// mutable package receipt. Expanding or editing them requires a new review.
+const approved = {
+  "foods.json":
+    "d8b4ccca70771bdf47723fa8e5e44d91d041aa1ebd24d93ae075eea14cebe954",
+  "provenance.json":
+    "f93848b93e9cd9167d8c7a2c255dcc71a547b0b27414f1c4e45971321a8ed3ad",
+  "LICENSE-SCOPE.json":
+    "fd78e49460620c28e2191bb0901a860942310fedd01c3d1d6c2c16611db28ef8",
+  "selected.json":
+    "46569dd583bbd28d207c555140ac724e74a0d93452312dd9de7b5cb9992dc849",
+  "previews/overview.png":
+    "4d095931d9fc7e246dc3bdf5d33643b3e5afd14f7b089f681051cd0b08f5bff3",
+  "previews/receipt.json":
+    "f5d813876ad2042fde70893db3991595942756cf81ff561e232ae4b1ec552396",
+};
+for (const [path, digest] of Object.entries(approved)) {
+  if (await hash(await Deno.readFile(path)) !== digest) {
+    throw Error(`Approved selection metadata differs: ${path}`);
+  }
+}
+const generated = await selectedOutputs();
+if (
+  generated.catalog !== await Deno.readTextFile("catalog.json") ||
+  generated.overview !== await Deno.readTextFile("previews/overview.svg")
+) {
+  throw Error("Public catalog or preview differs from approved selection");
 }
 const records: {
   path: string;

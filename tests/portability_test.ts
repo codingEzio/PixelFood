@@ -75,6 +75,7 @@ Deno.test("export rejects added or substituted artwork and respects release bloc
   });
   try {
     await Deno.mkdir(`${fixture}/scripts`);
+    await Deno.mkdir(`${fixture}/src`);
     for (
       const p of [
         "public-files.json",
@@ -82,6 +83,9 @@ Deno.test("export rejects added or substituted artwork and respects release bloc
         "selected.json",
         "provenance.json",
         "scripts/public-check.ts",
+        "src/selected_catalog.ts",
+        "src/catalog.ts",
+        "src/overview.ts",
       ]
     ) {
       await Deno.copyFile(p, `${fixture}/${p}`);
@@ -242,6 +246,52 @@ Deno.test("selected package export is repeatable and reads back every file", asy
       second.success && next && next[1] === line[1],
       "repeat export not idempotent",
     );
+    // A receipt can be fabricated from changed working files. It must not
+    // grant approval to additional food metadata.
+    const foodsPath = `${fixture}/foods.json`;
+    const receiptPath = `${fixture}/candidate-receipt.json`;
+    const originalFoods = await Deno.readTextFile(foodsPath);
+    const originalReceipt = await Deno.readTextFile(receiptPath);
+    const expanded = JSON.parse(originalFoods);
+    for (let i = 0; i < 67; i++) {
+      expanded.push({ ...expanded[0], id: `synthetic${i}` });
+    }
+    await Deno.writeTextFile(foodsPath, JSON.stringify(expanded));
+    const records = [];
+    for (const path of [...policy.files].sort() as string[]) {
+      const bytes = await Deno.readFile(`${fixture}/${path}`);
+      const stat = await Deno.stat(`${fixture}/${path}`);
+      records.push({
+        path,
+        sha256: await sha256(bytes),
+        bytes: bytes.length,
+        executable: !!((stat.mode ?? 0) & 0o111),
+      });
+    }
+    const forged = JSON.parse(originalReceipt);
+    forged.files = records;
+    forged.seal = await sha256(
+      new TextEncoder().encode(JSON.stringify(records)),
+    );
+    await Deno.writeTextFile(
+      receiptPath,
+      JSON.stringify(forged, null, 2) + "\n",
+    );
+    for (const task of ["public:release-check", "public:receipt"]) {
+      const result = await new Deno.Command("deno", {
+        cwd: fixture,
+        args: ["task", task],
+      }).output();
+      assert(
+        !result.success &&
+          new TextDecoder().decode(result.stderr).includes(
+            "Approved selection metadata differs: foods.json",
+          ),
+        `expanded selection accepted by ${task}`,
+      );
+    }
+    await Deno.writeTextFile(foodsPath, originalFoods);
+    await Deno.writeTextFile(receiptPath, originalReceipt);
     const readme = `${fixture}/README.md`;
     await Deno.writeTextFile(
       readme,

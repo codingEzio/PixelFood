@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "scope": "selected-artwork-and-tools-local-candidate",
-  "seal": "690fd0875d1ce896e38846c5668cd161523bfe39fe30ab4e32ef814518399242",
+  "seal": "dcda250ceff3628408363ab8f934d65a569613d51c994e8a9c44d7930daa6951",
   "files": [
     {
       "path": ".gitignore",
@@ -803,8 +803,8 @@
     },
     {
       "path": "scripts/public-check.ts",
-      "sha256": "46f10758aab0a699667b9edf468926af8d1b9fabb13aab073ef5528c384df66b",
-      "bytes": 10107,
+      "sha256": "8f4168d6c2af0924f4288898aeddaf2fc35a645449c35e38adaaa5261d10c191",
+      "bytes": 11504,
       "executable": false
     },
     {
@@ -881,8 +881,8 @@
     },
     {
       "path": "tests/portability_test.ts",
-      "sha256": "8e5c5591c4ac1b622a4e3aab27de76f5fd5ae3c69ac7a387d60454c08abe276c",
-      "bytes": 11310,
+      "sha256": "ccaea725cb9aaf31a0802d8379d9e0226dd0422376fbdccfc9dd63f909dcd979",
+      "bytes": 13219,
       "executable": false
     },
     {
