@@ -48,7 +48,7 @@ export async function outputs(
   if (JSON.stringify(expected) !== JSON.stringify(actual.sort())) {
     throw Error("Asset files differ from the catalog");
   }
-  const embedded = [];
+  const embedded: (Food & Receipt & { data: string })[] = [];
   const catalog = [];
   for (const food of foods) {
     if (
@@ -115,9 +115,12 @@ export async function outputs(
     html = (await Deno.readTextFile("src/gallery.html"))
       .replace(
         "/*__FOODS__*/",
-        `const foods = ${JSON.stringify(embedded).replaceAll("<", "\\u003c")};`,
+        () =>
+          `const foods = ${
+            JSON.stringify(embedded).replaceAll("<", "\\u003c")
+          };`,
       )
-      .replace("/*__SCRIPT__*/", script);
+      .replace("/*__SCRIPT__*/", () => script);
   }
   return {
     catalog: JSON.stringify(

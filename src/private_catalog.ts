@@ -71,7 +71,7 @@ export async function privateOutputs(
       );
     }
   }
-  const embedded = [];
+  const embedded: (Food & Receipt & { data: string })[] = [];
   const catalog = [];
   for (const food of foods) {
     if (
@@ -153,9 +153,12 @@ export async function privateOutputs(
     html = (await Deno.readTextFile("src/gallery.html"))
       .replace(
         "/*__FOODS__*/",
-        `const foods = ${JSON.stringify(embedded).replaceAll("<", "\\u003c")};`,
+        () =>
+          `const foods = ${
+            JSON.stringify(embedded).replaceAll("<", "\\u003c")
+          };`,
       )
-      .replace("/*__SCRIPT__*/", script);
+      .replace("/*__SCRIPT__*/", () => script);
   }
   return {
     catalog: JSON.stringify(

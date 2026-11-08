@@ -1,5 +1,5 @@
 import { privateOutputs } from "../src/private_catalog.ts";
-import { previewHandler } from "../src/preview_server.ts";
+import { privatePreviewHandler } from "../src/preview_server.ts";
 
 const [root, portArg = "18221"] = Deno.args;
 const port = Number(portArg);
@@ -27,5 +27,5 @@ const server = Deno.serve({
   hostname: "127.0.0.1",
   port,
   signal: controller.signal,
-}, previewHandler(html));
+}, privatePreviewHandler(html, port));
 await server.finished;

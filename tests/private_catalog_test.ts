@@ -1,4 +1,5 @@
 import { privateOutputs } from "../src/private_catalog.ts";
+import { privatePreviewHandler } from "../src/preview_server.ts";
 import { selectedOutputs } from "../src/selected_catalog.ts";
 
 Deno.test("private collection adds an item without changing public output and rejects bad records", async () => {
@@ -18,7 +19,11 @@ Deno.test("private collection adds an item without changing public output and re
         `${root}/assets/webp/${food.id}.webp`,
       );
     }
-    const extra = { ...foods[0], id: "synthetictest" };
+    const extra = {
+      ...foods[0],
+      id: "synthetictest",
+      names: { ...foods[0].names, en: "Test $' $$ $& $` name" },
+    };
     const extraReceipt = {
       ...provenance.assets[0],
       id: extra.id,
@@ -54,6 +59,12 @@ Deno.test("private collection adds an item without changing public output and re
       JSON.parse(privateResult.catalog).assets.length !== 55 ||
       !privateResult.html.includes("synthetictest")
     ) throw Error("Private item missing");
+    const match = privateResult.html.match(/const foods = (.*);/);
+    if (
+      !match ||
+      JSON.parse(match[1]).find((food: { id: string }) => food.id === extra.id)
+          ?.names.en !== extra.names.en
+    ) throw Error("Private names were changed during HTML embedding");
     if (
       (await selectedOutputs()).catalog !== publicBefore.catalog ||
       publicBefore.catalog.includes("synthetictest")
@@ -81,5 +92,38 @@ Deno.test("private collection adds an item without changing public output and re
     await reject();
   } finally {
     await Deno.remove(root, { recursive: true });
+  }
+});
+
+Deno.test("private gallery only accepts loopback Host with the listening port", () => {
+  const handler = privatePreviewHandler("private page", 18221);
+  const request = (host: string | null) =>
+    new Request("http://127.0.0.1:18221/", {
+      headers: host === null ? {} : { host },
+    });
+  for (
+    const host of ["localhost:18221", "LOCALHOST:18221", "127.0.0.1:18221"]
+  ) {
+    if (handler(request(host)).status !== 200) {
+      throw Error(
+        `Valid Host rejected: ${host}`,
+      );
+    }
+  }
+  for (
+    const host of [
+      null,
+      "attacker.invalid:18221",
+      "127.0.0.1:18222",
+      "localhost",
+      "localhost.attacker.invalid:18221",
+      "127.0.0.1:18221@attacker.invalid",
+      "[::1]:18221",
+      "127.0.0.1:018221",
+    ]
+  ) {
+    if (handler(request(host)).status !== 403) {
+      throw Error(`Invalid Host accepted: ${host}`);
+    }
   }
 });

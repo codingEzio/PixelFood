@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "scope": "selected-artwork-and-tools-local-candidate",
-  "seal": "e6bb8e1b0e91cd3d9d3042acec971c82d47e54b37b72218266af3ba87ffea4f4",
+  "seal": "690fd0875d1ce896e38846c5668cd161523bfe39fe30ab4e32ef814518399242",
   "files": [
     {
       "path": ".gitignore",
@@ -797,8 +797,8 @@
     },
     {
       "path": "scripts/private-serve.ts",
-      "sha256": "c934e3d305f4f0ca96024d34f6a2d43f631431c4abe0af18034c3f643ab944c4",
-      "bytes": 1099,
+      "sha256": "ff2b648d90ac2ad417cd0080476dd4b2ceae7a0e4e368c869fe655f729ea46e1",
+      "bytes": 1119,
       "executable": false
     },
     {
@@ -833,8 +833,8 @@
     },
     {
       "path": "src/catalog.ts",
-      "sha256": "eb83047501c52fa172214a14c4304a1d0dbb9ed36c68d35de4b2c4abee3bfdd3",
-      "bytes": 4597,
+      "sha256": "d99e90a80befd0f6e5514f8d1627d940e9b48f03860491d0b07f3c6ea641e74e",
+      "bytes": 4682,
       "executable": false
     },
     {
@@ -863,14 +863,14 @@
     },
     {
       "path": "src/preview_server.ts",
-      "sha256": "5c67b74f6cf06fbbd86f0beff0ac7988460dd841ef9edc178a8d66f78370e743",
-      "bytes": 663,
+      "sha256": "a42dc59e44caf617598d45ec997fd3e3f7f17560b274a53907ff296feedcd358",
+      "bytes": 1252,
       "executable": false
     },
     {
       "path": "src/private_catalog.ts",
-      "sha256": "f13f2dc50deaedc0f82fa578d571149d381c168200a25cd47d7f7b80af7bdb25",
-      "bytes": 6020,
+      "sha256": "0174784de9414a56e0c0cbb40fcbbf20a8aeb2b2c3fd058260e254820f499d54",
+      "bytes": 6105,
       "executable": false
     },
     {
@@ -887,8 +887,8 @@
     },
     {
       "path": "tests/private_catalog_test.ts",
-      "sha256": "b859734985c107cdf3f25e00bb55c3ce174707b6dccd44a19e74e9bd307eff74",
-      "bytes": 2816,
+      "sha256": "9022b6e7764643185c2a40cbeaa12ab89e1a502b081b537fd2740d9a6a2f9071",
+      "bytes": 4134,
       "executable": false
     },
     {
