@@ -292,6 +292,25 @@ Deno.test("selected package export is repeatable and reads back every file", asy
     }
     await Deno.writeTextFile(foodsPath, originalFoods);
     await Deno.writeTextFile(receiptPath, originalReceipt);
+    const scopeForCode = `${fixture}/LICENSE-SCOPE.json`;
+    const scopeOriginal = await Deno.readTextFile(scopeForCode);
+    const incompleteScope = JSON.parse(scopeOriginal);
+    incompleteScope.code.files = incompleteScope.code.files.filter((
+      path: string,
+    ) => path !== "scripts/private-maintenance.ts");
+    await Deno.writeTextFile(scopeForCode, JSON.stringify(incompleteScope));
+    const missingCode = await new Deno.Command("deno", {
+      cwd: fixture,
+      args: ["task", "public:release-check"],
+    }).output();
+    assert(
+      !missingCode.success &&
+        new TextDecoder().decode(missingCode.stderr).includes(
+          "MIT code scope does not match",
+        ),
+      "incomplete MIT scope accepted",
+    );
+    await Deno.writeTextFile(scopeForCode, scopeOriginal);
     const readme = `${fixture}/README.md`;
     await Deno.writeTextFile(
       readme,

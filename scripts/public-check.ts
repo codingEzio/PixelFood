@@ -47,6 +47,15 @@ if (
 const selectionScope = await readJson("LICENSE-SCOPE.json");
 const selection = await readJson("selected.json");
 const provenance = await readJson("provenance.json");
+const codeFiles = selectionScope.code?.files;
+const expectedCodeFiles = files.filter((path) =>
+  path === "deno.json" || /^(?:scripts|src|tests)\//.test(path)
+);
+if (
+  selectionScope.code?.license !== "MIT" || !Array.isArray(codeFiles) ||
+  new Set(codeFiles).size !== codeFiles.length ||
+  JSON.stringify([...codeFiles].sort()) !== JSON.stringify(expectedCodeFiles)
+) throw Error("MIT code scope does not match public first-party sources");
 const reviewed = selectionScope.artwork.assets;
 const selected = selection.assets;
 const originals = provenance.assets;
@@ -115,7 +124,7 @@ const approved = {
   "provenance.json":
     "f93848b93e9cd9167d8c7a2c255dcc71a547b0b27414f1c4e45971321a8ed3ad",
   "LICENSE-SCOPE.json":
-    "fd78e49460620c28e2191bb0901a860942310fedd01c3d1d6c2c16611db28ef8",
+    "c6a96a4b6a60b7d80fc244d9018cfc128e4fffa988643b7e7ec182c83ea91a65",
   "selected.json":
     "46569dd583bbd28d207c555140ac724e74a0d93452312dd9de7b5cb9992dc849",
   "previews/overview.png":

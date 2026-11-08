@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "scope": "selected-artwork-and-tools-local-candidate",
-  "seal": "dcda250ceff3628408363ab8f934d65a569613d51c994e8a9c44d7930daa6951",
+  "seal": "261ca68ea5f3d759fa5a5a55739e433c5a5ee1d4c433d5b4ec5cbe80bde4a69d",
   "files": [
     {
       "path": ".gitignore",
@@ -29,8 +29,8 @@
     },
     {
       "path": "LICENSE-SCOPE.json",
-      "sha256": "fd78e49460620c28e2191bb0901a860942310fedd01c3d1d6c2c16611db28ef8",
-      "bytes": 34950,
+      "sha256": "c6a96a4b6a60b7d80fc244d9018cfc128e4fffa988643b7e7ec182c83ea91a65",
+      "bytes": 35138,
       "executable": false
     },
     {
@@ -803,8 +803,8 @@
     },
     {
       "path": "scripts/public-check.ts",
-      "sha256": "8f4168d6c2af0924f4288898aeddaf2fc35a645449c35e38adaaa5261d10c191",
-      "bytes": 11504,
+      "sha256": "97d323235d6c2943c800735cd8621f5d9454e6c32d04857b9355f67da915caa1",
+      "bytes": 11947,
       "executable": false
     },
     {
@@ -881,8 +881,8 @@
     },
     {
       "path": "tests/portability_test.ts",
-      "sha256": "ccaea725cb9aaf31a0802d8379d9e0226dd0422376fbdccfc9dd63f909dcd979",
-      "bytes": 13219,
+      "sha256": "f52dc0bb3cae6fd37832041dba55838b6698114263d71dbf2265b128a1fc55f0",
+      "bytes": 14020,
       "executable": false
     },
     {

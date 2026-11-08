@@ -11,6 +11,8 @@
       "scripts/build.ts",
       "scripts/export-preview.ts",
       "scripts/preview.ts",
+      "scripts/private-maintenance.ts",
+      "scripts/private-serve.ts",
       "scripts/public-check.ts",
       "scripts/serve-preview.ts",
       "scripts/setup.sh",
@@ -21,8 +23,11 @@
       "src/overview.ts",
       "src/preview_receipt.ts",
       "src/preview_server.ts",
+      "src/private_catalog.ts",
       "src/selected_catalog.ts",
-      "tests/portability_test.ts"
+      "tests/portability_test.ts",
+      "tests/private_catalog_test.ts",
+      "tests/private_maintenance_test.ts"
     ],
     "boundary": "Project-authored software and documentation only; embedded artwork/image payloads and third-party components are excluded from MIT. Retained third-party notices take precedence."
   },
