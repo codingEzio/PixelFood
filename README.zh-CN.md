@@ -49,3 +49,14 @@ https://creativecommons.org/licenses/by/4.0/ 并说明修改。CC BY 4.0
 本地候选包排除来源未明素材、私人原文件、未选入的工具源码及原 Git 历史。参见
 LICENSE-SCOPE.json 与
 candidate-receipt.json。此次仅核对来源、容器元数据与可见内容，不保证版权成立或全面法律审查通过；尚未授权发布。
+
+## 私人图库
+
+完整数据放在仓库外的私人目录，包含
+`foods.json`、`provenance.json`、`LICENSE-SCOPE.json` 和
+`assets/webp/`。公开选集的数据与哈希必须一致；原稿和敏感来源数据另行保存。完整
+`foods.json` 可供需要全部 ID 的程序使用。
+
+运行 `deno task private:demo /私人数据的绝对路径`，在本机打开
+`http://127.0.0.1:18221/`；第二个参数可指定端口。此图库只读，仅通过本机回环地址提供嵌入图片的页面。公开构建不读取私人目录；不要将私人素材或完整预览加入
+Git 或公开导出。公开素材更新后，须同步核对私人记录。

@@ -23,6 +23,7 @@
     "public:check": "deno run --allow-read scripts/public-check.ts",
     "public:prepare": "deno task verify && deno run --allow-read --allow-write=Local scripts/public-check.ts --export",
     "public:release-check": "deno run --allow-read scripts/public-check.ts --release",
-    "test": "deno test --allow-read=. --allow-write=Local --allow-run=deno tests"
+    "test": "deno test --allow-read=. --allow-write=Local --allow-run=deno tests",
+    "private:demo": "deno run --allow-read --allow-net=127.0.0.1 scripts/private-serve.ts"
   }
 }

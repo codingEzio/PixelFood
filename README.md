@@ -60,3 +60,19 @@ This local candidate excludes unresolved material, private originals, unselected
 tool sources and original Git history. See LICENSE-SCOPE.json and
 candidate-receipt.json. Selection is a bounded source, metadata and visual
 review, not a guarantee of copyright or legal clearance.
+
+## Optional private collection
+
+Keep a full private data directory outside this repository. It contains
+`foods.json`, `provenance.json`, `LICENSE-SCOPE.json`, and `assets/webp/`; the
+first 54 public records and image hashes must match this repository. Keep
+original images and sensitive source evidence separately. The full `foods.json`
+is also suitable for consumers that require all IDs.
+
+Run `deno task private:demo /absolute/path/to/private-data` and open
+`http://127.0.0.1:18221/`. An optional second argument sets the port. This
+read-only gallery embeds the full collection and serves only the page on
+loopback. It does not write private data or change the public build. Public
+tasks never read this directory; private assets and generated full previews must
+not be added to Git or public exports. Changes to public assets require
+reconciling their matching private records before using the private gallery.
