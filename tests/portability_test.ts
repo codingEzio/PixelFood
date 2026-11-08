@@ -242,6 +242,42 @@ Deno.test("selected package export is repeatable and reads back every file", asy
       second.success && next && next[1] === line[1],
       "repeat export not idempotent",
     );
+    const readme = `${fixture}/README.md`;
+    await Deno.writeTextFile(
+      readme,
+      (await Deno.readTextFile(readme)) + "\nfixture change\n",
+    );
+    const stale = await new Deno.Command("deno", {
+      cwd: fixture,
+      args: ["task", "public:check"],
+    }).output();
+    assert(
+      !stale.success &&
+        new TextDecoder().decode(stale.stderr).includes(
+          "Candidate receipt is stale",
+        ),
+      "stale tracked receipt accepted",
+    );
+    const reseal = await new Deno.Command("deno", {
+      cwd: fixture,
+      args: ["task", "public:receipt"],
+    }).output();
+    assert(reseal.success, "receipt regeneration failed");
+    const checked = await new Deno.Command("deno", {
+      cwd: fixture,
+      args: ["task", "public:check"],
+    }).output();
+    assert(checked.success, "regenerated receipt did not verify");
+    const rebuiltReceipt = JSON.parse(
+      await Deno.readTextFile(`${fixture}/candidate-receipt.json`),
+    );
+    const readmeRow = rebuiltReceipt.files.find((row: { path: string }) =>
+      row.path === "README.md"
+    );
+    assert(
+      readmeRow.sha256 === await sha256(await Deno.readFile(readme)),
+      "resealed receipt mismatch",
+    );
     const scopePath = `${fixture}/LICENSE-SCOPE.json`;
     const originalScope = await Deno.readTextFile(scopePath);
     const editedScope = JSON.parse(originalScope);

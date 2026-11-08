@@ -56,3 +56,22 @@ herramientas no seleccionadas y la historia Git original. Consulte
 LICENSE-SCOPE.json y candidate-receipt.json. Es revisión limitada de
 procedencia, metadatos y contenido visible, no garantía jurídica universal.
 Publicar requiere otra autorización.
+
+## Mantener una colección privada
+
+Guarda `foods.json`, `provenance.json`, `LICENSE-SCOPE.json` y `assets/webp/` en
+un `ROOT` fuera del repositorio; las entradas públicas deben coincidir. Guarda
+los PNG originales y recibos privados en `ROOT/originals/` y `ROOT/receipts/`,
+sin eliminar los originales existentes. Al añadir una imagen, actualiza el WebP
+y los tres registros; revisa la imagen y su procedencia por separado.
+
+`deno task private:demo /absolute/ROOT` abre la galería local.
+`deno task private:build /absolute/ROOT [ego|rsvg]` crea el catálogo, SVG, PNG y
+recibo en `ROOT/builds/BUILD_ID/`. Usa Ego por defecto en macOS y librsvg en
+otros sistemas; rsvg requiere `rsvg-convert` y `dwebp`. Ejecuta
+`deno task private:verify /absolute/ROOT BUILD_ID` e inspecciona la vista
+previa. Al repetir, verifica y reutiliza el resultado; no sobrescribe resultados
+dañados. Los archivos temporales fallidos quedan para revisión. Las rutas del
+catálogo son relativas a ROOT. Para el CLI de catálogo de Godspeed, indica
+`ROOT/foods.json`; export puede modificarlo. No incluyas imágenes ni resultados
+privados en Git ni en exportaciones públicas.

@@ -76,3 +76,27 @@ loopback. It does not write private data or change the public build. Public
 tasks never read this directory; private assets and generated full previews must
 not be added to Git or public exports. Changes to public assets require
 reconciling their matching private records before using the private gallery.
+
+### Maintaining private artwork
+
+Keep original PNGs and private source receipts in `ROOT/originals/` and
+`ROOT/receipts/`; these folders are not read by the gallery or build and are
+never public exports. Preserve existing originals when migrating. Add an image
+to `ROOT/assets/webp/` and its matching records to `ROOT/foods.json`,
+`ROOT/provenance.json`, and `ROOT/LICENSE-SCOPE.json`. Keep all public entries
+consistent. Inspect artwork and source evidence separately.
+
+Run `deno task private:build /absolute/ROOT [ego|rsvg]`; the default is Ego on
+macOS and librsvg elsewhere. The `rsvg` option requires `rsvg-convert` and
+`dwebp`. It creates `ROOT/builds/BUILD_ID/` with catalog, SVG, PNG and receipt.
+Catalog asset paths are relative to ROOT. Then run
+`deno task private:verify /absolute/ROOT BUILD_ID` and inspect the preview.
+Repeating the build verifies and reuses matching output; damaged or incomplete
+output fails without replacement. Failed staging folders remain for inspection.
+Keep all full-catalog outputs private. For Godspeed's catalog CLI, explicitly
+use `ROOT/foods.json`; its export can modify that file.
+
+After reviewing changes to public files, run `deno task public:receipt` to
+refresh the tracked receipt. `public:check`, export, and release checks reject a
+stale receipt. This local receipt does not approve a release or replace Git
+review.

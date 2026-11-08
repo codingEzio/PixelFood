@@ -51,3 +51,22 @@ X-PixelFood와 동봉 출처를 표시하고 https://creativecommons.org/license
 제외합니다. LICENSE-SCOPE.json과candidate-receipt.json을 확인하십시오.
 출처、컨테이너 메타데이터、보이는 내용의 한정 검토이며 포괄적 권리 보증은
 아닙니다. 공개는 별도 승인이 필요합니다.
+
+## 비공개 컬렉션 관리
+
+저장소 밖의 `ROOT`에 `foods.json`, `provenance.json`, `LICENSE-SCOPE.json`,
+`assets/webp/`를 보관하고 공개 항목과 일치시킵니다. 원본 PNG와 비공개 출처
+기록은 `ROOT/originals/`와 `ROOT/receipts/`에 보관하며 기존 원본은 유지합니다.
+이미지를 추가할 때 WebP와 세 기록을 함께 갱신하고 이미지와 출처를 별도로
+확인합니다.
+
+`deno task private:demo /absolute/ROOT`는 로컬 전용 갤러리입니다.
+`deno task private:build /absolute/ROOT [ego|rsvg]`는 catalog, SVG, PNG와
+영수증을 `ROOT/builds/BUILD_ID/`에 만듭니다. macOS 기본값은 Ego, 다른 시스템은
+librsvg이며 rsvg에는 `rsvg-convert`와 `dwebp`가 필요합니다.
+`deno task private:verify /absolute/ROOT BUILD_ID`로 검증하고 미리보기를
+확인합니다. 재실행은 기존 결과를 검증하며 손상된 결과를 덮어쓰지 않습니다.
+실패한 임시 파일은 확인용으로 남습니다. catalog의 이미지 경로는 ROOT 기준입니다.
+Godspeed catalog CLI에는 `ROOT/foods.json`을 지정합니다. export는 이 파일을
+수정할 수 있습니다. 비공개 이미지와 생성물을 Git이나 공개 배포에 포함하지
+마세요.

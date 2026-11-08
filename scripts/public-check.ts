@@ -1,7 +1,7 @@
 // Inspect an explicit local review payload. This is not permission to publish.
 type Policy = { files: string[]; releaseBlockers: string[] };
 if (
-  Deno.args.some((arg) => !["--export", "--release"].includes(arg))
+  Deno.args.some((arg) => !["--export", "--release", "--reseal"].includes(arg))
 ) {
   throw Error("Unknown option");
 }
@@ -160,6 +160,22 @@ const receipt = {
     "Pattern checks are not a complete secret or rights audit.",
   ],
 };
+const receiptText = JSON.stringify(receipt, null, 2) + "\n";
+if (Deno.args.includes("--reseal")) {
+  if (Deno.args.length !== 1) {
+    throw Error("Reseal cannot be combined with other options");
+  }
+  const temporary = ".candidate-receipt.next";
+  await Deno.writeTextFile(temporary, receiptText, { createNew: true });
+  await Deno.rename(temporary, "candidate-receipt.json");
+  if (await Deno.readTextFile("candidate-receipt.json") !== receiptText) {
+    throw Error("Receipt readback failed");
+  }
+} else if (await Deno.readTextFile("candidate-receipt.json") !== receiptText) {
+  throw Error(
+    "Candidate receipt is stale; run deno task public:receipt after review",
+  );
+}
 if (Deno.args.includes("--export")) {
   const parent = "Local/public-candidates";
   for (const directory of ["Local", parent]) {
@@ -173,7 +189,6 @@ if (Deno.args.includes("--export")) {
     }
   }
   const output = `${parent}/${seal}`;
-  const receiptText = JSON.stringify(receipt, null, 2) + "\n";
   let exists = false;
   try {
     const stat = await Deno.lstat(output);

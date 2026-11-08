@@ -23,7 +23,10 @@
     "public:check": "deno run --allow-read scripts/public-check.ts",
     "public:prepare": "deno task verify && deno run --allow-read --allow-write=Local scripts/public-check.ts --export",
     "public:release-check": "deno run --allow-read scripts/public-check.ts --release",
-    "test": "deno test --allow-read=. --allow-write=Local --allow-run=deno tests",
-    "private:demo": "deno run --allow-read --allow-net=127.0.0.1 scripts/private-serve.ts"
+    "test": "deno test --allow-read=.,/tmp --allow-write=Local,/tmp --allow-run=deno tests",
+    "private:demo": "deno run --allow-read --allow-net=127.0.0.1 scripts/private-serve.ts",
+    "private:build": "deno run --allow-read --allow-write --allow-run=ego-browser,rsvg-convert,dwebp scripts/private-maintenance.ts build",
+    "private:verify": "deno run --allow-read scripts/private-maintenance.ts verify",
+    "public:receipt": "deno run --allow-read --allow-write=candidate-receipt.json,.candidate-receipt.next scripts/public-check.ts --reseal"
   }
 }

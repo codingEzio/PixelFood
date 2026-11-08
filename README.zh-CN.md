@@ -60,3 +60,17 @@ candidate-receipt.json。此次仅核对来源、容器元数据与可见内容�
 运行 `deno task private:demo /私人数据的绝对路径`，在本机打开
 `http://127.0.0.1:18221/`；第二个参数可指定端口。此图库只读，仅通过本机回环地址提供嵌入图片的页面。公开构建不读取私人目录；不要将私人素材或完整预览加入
 Git 或公开导出。公开素材更新后，须同步核对私人记录。
+
+### 维护私人素材
+
+原始 PNG 与私人来源收据分别保存在
+`ROOT/originals/`、`ROOT/receipts/`，图库和构建不会读取，也不会公开导出；迁移时保留已有原稿。新增
+WebP 到 `ROOT/assets/webp/`，同步更新
+`ROOT/foods.json`、`ROOT/provenance.json`、`ROOT/LICENSE-SCOPE.json`，并保持公开项目一致。另行检查素材与来源证据。
+
+运行 `deno task private:build /绝对ROOT [ego|rsvg]`：macOS 默认
+Ego，其他系统默认 librsvg；`rsvg` 需要 `rsvg-convert` 和 `dwebp`。输出到
+`ROOT/builds/BUILD_ID/`，包含 catalog、SVG、PNG 和收据；catalog 素材路径相对于
+ROOT。运行
+`deno task private:verify /绝对ROOT BUILD_ID`，并检查预览。重跑会验证并复用相同输出；损坏或不完整的输出不会被覆盖，失败暂存保留供检查。完整图库产物保持私人。Godspeed
+catalog CLI 请明确指向 `ROOT/foods.json`；其 export 可能修改此文件。

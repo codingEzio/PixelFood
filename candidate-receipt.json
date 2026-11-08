@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "scope": "selected-artwork-and-tools-local-candidate",
-  "seal": "514aa5603abad213a9c18fc7d4a1258bf3584829685b13ea6243088f20be2dc0",
+  "seal": "e6bb8e1b0e91cd3d9d3042acec971c82d47e54b37b72218266af3ba87ffea4f4",
   "files": [
     {
       "path": ".gitignore",
@@ -35,38 +35,38 @@
     },
     {
       "path": "README.es.md",
-      "sha256": "65d7aa13ea64e56d18186a97d7d31266d45b0a6abbe59a9d237bc4ef698d73a6",
-      "bytes": 2676,
+      "sha256": "376e0bca8655bde96fcef8ffcc710b30874825fbd2a20a6b9c6359a27029f0ff",
+      "bytes": 3832,
       "executable": false
     },
     {
       "path": "README.ja.md",
-      "sha256": "953d8cfcea3e49e13341a662053b46ece3b1190d8c98b77fd8d069d1e60dd336",
-      "bytes": 3005,
+      "sha256": "3e10fa2d02e6be5a0302489eaee13d754e84f438febc14689f2489942a6df66c",
+      "bytes": 4297,
       "executable": false
     },
     {
       "path": "README.ko.md",
-      "sha256": "6ff1cfce56190dd7ac849f7c18f6270450c93ff8f5a0c2d03a2584ab52480463",
-      "bytes": 2926,
+      "sha256": "cc9d54ec724cbb361179b088835109cfb37c3d9b62d00563735e6d3ef530272e",
+      "bytes": 4183,
       "executable": false
     },
     {
       "path": "README.md",
-      "sha256": "cf3b0620daabdcc45336ebc621496ccf90d122f5832273eb2aabcf3a696aee7e",
-      "bytes": 2735,
+      "sha256": "59e109caa0f074e1bb4b5ff33bcb27975353ba1db00d458ef942b174877900db",
+      "bytes": 5017,
       "executable": false
     },
     {
       "path": "README.zh-CN.md",
-      "sha256": "1e9a080ed2b41549419765c1026a9b8c54d6f12e7cdedb683dbd997673221600",
-      "bytes": 2462,
+      "sha256": "ccf14cfdd929631a1f0feb0d8c657a01f1a1fe42784ab528582c1d7724a312ab",
+      "bytes": 4093,
       "executable": false
     },
     {
       "path": "README.zh-TW.md",
-      "sha256": "c2b62dfa39dff5480e9784c334580d633b8d3e38d3d3324e42cdc249ff870770",
-      "bytes": 2462,
+      "sha256": "974df2d74f89a2fc6d77feebdf85f363ecf54db1b3116499b9870911548bf465",
+      "bytes": 4087,
       "executable": false
     },
     {
@@ -725,8 +725,8 @@
     },
     {
       "path": "deno.json",
-      "sha256": "bd2681517aa210e38ef8247a79a858f136db8ae9cb02d72f6d0675336f2df26f",
-      "bytes": 1698,
+      "sha256": "9f7f15d7c7e9fe8833dc99694a8f7d1d9e57bece0fdb71abe70a83d3747468d0",
+      "bytes": 2166,
       "executable": false
     },
     {
@@ -767,8 +767,8 @@
     },
     {
       "path": "public-files.json",
-      "sha256": "eb323785d159a8acd9dbc46f958d6d311ea6c558cbc0b2f77eca24e78c32b3af",
-      "bytes": 4620,
+      "sha256": "a0bee806438973be1c597369381f3eb8de065ec831207fe68a6098bb36d199e0",
+      "bytes": 4798,
       "executable": false
     },
     {
@@ -790,9 +790,21 @@
       "executable": false
     },
     {
+      "path": "scripts/private-maintenance.ts",
+      "sha256": "a94d2a9ad1d9990d5fb60243c11cf8ceea214bf4b9532e07c314461ccd0fa23e",
+      "bytes": 7054,
+      "executable": false
+    },
+    {
+      "path": "scripts/private-serve.ts",
+      "sha256": "c934e3d305f4f0ca96024d34f6a2d43f631431c4abe0af18034c3f643ab944c4",
+      "bytes": 1099,
+      "executable": false
+    },
+    {
       "path": "scripts/public-check.ts",
-      "sha256": "dc4a5f3902243c57a668fced3141433fb21d04ed43db6a5372c519748ff2284e",
-      "bytes": 9478,
+      "sha256": "46f10758aab0a699667b9edf468926af8d1b9fabb13aab073ef5528c384df66b",
+      "bytes": 10107,
       "executable": false
     },
     {
@@ -856,6 +868,12 @@
       "executable": false
     },
     {
+      "path": "src/private_catalog.ts",
+      "sha256": "f13f2dc50deaedc0f82fa578d571149d381c168200a25cd47d7f7b80af7bdb25",
+      "bytes": 6020,
+      "executable": false
+    },
+    {
       "path": "src/selected_catalog.ts",
       "sha256": "5acb13a37b6716eaeb371163422b8c28f37dbe998d55ec37d186a11dab1808e6",
       "bytes": 3601,
@@ -863,8 +881,20 @@
     },
     {
       "path": "tests/portability_test.ts",
-      "sha256": "d90e511fe4d72df80fb5c8622ba68f7548c5d795b93e5c7f9b52dd95e00e54a4",
-      "bytes": 10101,
+      "sha256": "8e5c5591c4ac1b622a4e3aab27de76f5fd5ae3c69ac7a387d60454c08abe276c",
+      "bytes": 11310,
+      "executable": false
+    },
+    {
+      "path": "tests/private_catalog_test.ts",
+      "sha256": "b859734985c107cdf3f25e00bb55c3ce174707b6dccd44a19e74e9bd307eff74",
+      "bytes": 2816,
+      "executable": false
+    },
+    {
+      "path": "tests/private_maintenance_test.ts",
+      "sha256": "42cc4b8352e6a10d477d2e3dc2fdb78d2656b915b2bfde676a420bff42616bf3",
+      "bytes": 3206,
       "executable": false
     }
   ],

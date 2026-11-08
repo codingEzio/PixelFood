@@ -12,7 +12,10 @@ if (
 if (!root.startsWith("/")) throw Error("Private data path must be absolute");
 const resolved = await Deno.realPath(root);
 const repository = await Deno.realPath(".");
-if (resolved === repository || resolved.startsWith(`${repository}/`)) {
+if (
+  resolved === "/" || resolved === repository ||
+  resolved.startsWith(`${repository}/`) || repository.startsWith(`${resolved}/`)
+) {
   throw Error("Private data must be outside the repository");
 }
 const { html } = await privateOutputs(resolved, true);
